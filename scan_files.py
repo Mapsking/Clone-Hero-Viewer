@@ -217,7 +217,6 @@ json_summary = {
 
 os.makedirs("docs", exist_ok=True)
 json_path = os.path.join("docs", "scan_summary.json")
-json_path = os.path.join("docs", "scan_summary.json")
 
 with open(json_path, "w", encoding="utf-8") as f:
     json.dump(json_summary, f, indent=4)
