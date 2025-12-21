@@ -87,7 +87,7 @@ highway_files = []
 for folder in highway_folders_to_scan:
     highway_files.extend(get_files_recursive(folder, (".png", ".jpg", ".jpeg", ".PNG", ".JPG", ".JPEG")))
     
-thumbnail_folder = os.path.join("site", "thumbnails")
+thumbnail_folder = os.path.join("docs", "thumbnails")
 os.makedirs(thumbnail_folder, exist_ok=True)
 
 thumbnails_info = []
@@ -215,8 +215,9 @@ json_summary = {
     "warnings": warnings_dict
 }
 
-os.makedirs("site", exist_ok=True)
-json_path = os.path.join("site", "scan_summary.json")
+os.makedirs("docs", exist_ok=True)
+json_path = os.path.join("docs", "scan_summary.json")
+json_path = os.path.join("docs", "scan_summary.json")
 
 with open(json_path, "w", encoding="utf-8") as f:
     json.dump(json_summary, f, indent=4)
