@@ -1,0 +1,702 @@
+{
+    "timestamp": "2025-12-21 06:53:13.490956",
+    "highways": [
+        "3-UP.png",
+        "Ace Of Spades 1.png",
+        "Arctic Camo.png",
+        "Armand Roses.jpg",
+        "Arrows.png",
+        "Balcony v3.png",
+        "Beatles Rock Band Greyscale.png",
+        "Beatles Rock Band.png",
+        "Berlin Camo.png",
+        "Black Ice.jpg",
+        "Blood Ice.png",
+        "Blue Belt.png",
+        "Blue Tiger Camo 2.png",
+        "Blue Tiger Camo.png",
+        "Blur Stroke Stripes.png",
+        "Bubbles (Neck).png",
+        "Chains.png",
+        "Chemfinal.jpg",
+        "Colorful Marble 2.png",
+        "Colorful Marble 3.png",
+        "Colorful Marble 4.png",
+        "Colorful Marble.png",
+        "Dance Pattern A.png",
+        "Dance Pattern B.png",
+        "DE SN Ped Test 1 Airoads LAS Dark.png",
+        "DE SN Ped Test 1 Airoads LAS.png",
+        "Deftones Diamond Eyes HW.jpg",
+        "Desert Camo 2.png",
+        "Desert Camo.png",
+        "Digital Camo 2.png",
+        "Digital Camo.png",
+        "Dimebag Darrell.png",
+        "DirtyHertz.png",
+        "Dragon Flower.jpg",
+        "Dusty Camo.png",
+        "ERDL Camo.png",
+        "Eva.jpg",
+        "Fall Camo.png",
+        "Flora Camo.png",
+        "GH 6 Proto Effect Highway OG.png",
+        "GH 6 Proto Effect Highway Purple.png",
+        "GH6 Proto Highway.png",
+        "GHTV (Neck).png",
+        "GIR Highway Test 2.jpg",
+        "Gold Camo 2.png",
+        "Gold Camo.png",
+        "Goofy Goober Highway.png",
+        "Gorillaz 2024.png",
+        "Greed.png",
+        "Green Highway.png",
+        "Haggis.jpg",
+        "Highway Pattern 2.png",
+        "Hooked On Classics.jpg",
+        "Ice Camo.png",
+        "iZenPenguin.jpg",
+        "JdurandTV.jpg",
+        "Joey D.jpg",
+        "Jojo Highway.jpg",
+        "Jojo Purple Highway.jpg",
+        "Light Saber.jpg",
+        "Lust.png",
+        "Marble 3.png",
+        "Marble.png",
+        "Marx.png",
+        "Miscellany.jpg",
+        "Neon Highway.png",
+        "Nevada Camo.png",
+        "OG SN Ped Test 1 Airoads LAS Dark.png",
+        "OG SN Ped Test 1 Airoads LAS.png",
+        "Ohm.jpg",
+        "Olive Camo.png",
+        "Pandas Love Rainbows.png",
+        "Partially Transparent (Undecided to keep or not).png",
+        "Peddy.jpg",
+        "Pink Highway.png",
+        "Pokemon Highway-Railing.png",
+        "PSX Wipeout.png",
+        "Purp Roses Red.png",
+        "Purple Ice.png",
+        "Purple Snake (238170).jpg",
+        "Q. o. t. S. A.png",
+        "R Decyrs.png",
+        "Red Belt.png",
+        "Red Camo.png",
+        "Red Tiger Camo 2.png",
+        "Red Tiger Camo.png",
+        "Rinnegan.jpg",
+        "Route FrLf Highway.png",
+        "Rusty Cage Tp.png",
+        "SA2B Dark.png",
+        "SA2B Mono.png",
+        "SA2B Muted.png",
+        "SA2B.png",
+        "Sahara Camo.png",
+        "Sanrio.png",
+        "Sanriosee.png",
+        "Shattering Lightning.png",
+        "Siberia Camo.png",
+        "Simple Darker WoR Highway.png",
+        "Star Wars Datapad Black Wallpaper Scaled.jpg",
+        "Stars And Stripes Darkened.jpg",
+        "Stars And Stripes Full Saturation.jpg",
+        "Stars And Stripes Monochrome.jpg",
+        "Steins Gate.png",
+        "Stickheadz32.jpg",
+        "Supahfast198.jpg",
+        "Tiger Camo.png",
+        "Trivium Dragon Dark 2.png",
+        "Trivium Dragon Dark.png",
+        "Untitled 122_20241027234020.png",
+        "Up Highway.png",
+        "Urban Camo.png",
+        "Warsaw Camo.png",
+        "White Pony BB.jpg",
+        "White Pony OG.jpg",
+        "Wii WoR.png",
+        "Wipeout Highway.png",
+        "Wooden Highway by Kanske.png",
+        "Woodland Camo 2.png",
+        "Woodland Camo 3.png",
+        "Woodland Camo.png",
+        "Yellow Belt.png",
+        "Yukon Camo.png"
+    ],
+    "color_profiles": [
+        "Acai 2018.ini",
+        "B Gradient Green SP - Alt.ini",
+        "B Gradient Green SP.ini",
+        "Balcony v3.ini",
+        "COUI.ini",
+        "CVXV.ini",
+        "Dan CH Rainbow Pink.ini",
+        "Drowned Vi Red.ini",
+        "Everything Emerald and Other Greens.ini",
+        "FFR.ini",
+        "Fig Purple Gradient.ini",
+        "Fixed Default Colors - Acai Flames 1.ini",
+        "Fixed Default Colors - Acai Flames 2.ini",
+        "Fixed Default Colors - Red SP.ini",
+        "Fixed Default Colors.ini",
+        "Fortnite Festival Pro.ini",
+        "Fortnite Festival.ini",
+        "Fortnite.ini",
+        "FRF Gradiant Pink SP - Alt 2.ini",
+        "FRF Gradiant Pink SP - Alt.ini",
+        "FRF Gradiant Pink SP.ini",
+        "GH WoR Accurate.ini",
+        "Gold Touch.ini",
+        "Halloween #4.ini",
+        "Halloween Is Every Day Of The Month.ini",
+        "Hammet Shredz.ini",
+        "IIDX Pendulum SP.ini",
+        "JKC21's CH Color Swatch.ini",
+        "Lateralus.ini",
+        "Litten.ini",
+        "MoonLight Zone.ini",
+        "Naruto.ini",
+        "Orange Gradient.ini",
+        "OutFox GH Mode Color Profile.ini",
+        "Pastel Rainbow #2.ini",
+        "Pepper Mint.ini",
+        "Pink & Blue.ini",
+        "Pink To White #2.ini",
+        "Purple Gradient.ini",
+        "R. Lombardi (Gold).ini",
+        "Red and White.ini",
+        "Red Black Fret.ini",
+        "Somthn With Pink and Purple.ini",
+        "Stars and Stripes.ini",
+        "Sunset #2.ini",
+        "Tapnote Colors Extreme.ini",
+        "test_broken_missing_field.ini",
+        "test_broken_multi_errors.ini",
+        "The Beatles Rock Band.ini",
+        "W Outer FRF Grad Pink SP Alt.ini",
+        "W Outer FRF Grad Pink SP.ini"
+    ],
+    "thumbnails": [
+        {
+            "file": "3-UP.png",
+            "thumbnail": "thumbnails/3-UP.png"
+        },
+        {
+            "file": "Ace Of Spades 1.png",
+            "thumbnail": "thumbnails/Ace Of Spades 1.png"
+        },
+        {
+            "file": "Arctic Camo.png",
+            "thumbnail": "thumbnails/Arctic Camo.png"
+        },
+        {
+            "file": "Armand Roses.jpg",
+            "thumbnail": "thumbnails/Armand Roses.jpg"
+        },
+        {
+            "file": "Arrows.png",
+            "thumbnail": "thumbnails/Arrows.png"
+        },
+        {
+            "file": "Balcony v3.png",
+            "thumbnail": "thumbnails/Balcony v3.png"
+        },
+        {
+            "file": "Beatles Rock Band Greyscale.png",
+            "thumbnail": "thumbnails/Beatles Rock Band Greyscale.png"
+        },
+        {
+            "file": "Beatles Rock Band.png",
+            "thumbnail": "thumbnails/Beatles Rock Band.png"
+        },
+        {
+            "file": "Berlin Camo.png",
+            "thumbnail": "thumbnails/Berlin Camo.png"
+        },
+        {
+            "file": "Black Ice.jpg",
+            "thumbnail": "thumbnails/Black Ice.jpg"
+        },
+        {
+            "file": "Blood Ice.png",
+            "thumbnail": "thumbnails/Blood Ice.png"
+        },
+        {
+            "file": "Blue Belt.png",
+            "thumbnail": "thumbnails/Blue Belt.png"
+        },
+        {
+            "file": "Blue Tiger Camo 2.png",
+            "thumbnail": "thumbnails/Blue Tiger Camo 2.png"
+        },
+        {
+            "file": "Blue Tiger Camo.png",
+            "thumbnail": "thumbnails/Blue Tiger Camo.png"
+        },
+        {
+            "file": "Blur Stroke Stripes.png",
+            "thumbnail": "thumbnails/Blur Stroke Stripes.png"
+        },
+        {
+            "file": "Bubbles (Neck).png",
+            "thumbnail": "thumbnails/Bubbles (Neck).png"
+        },
+        {
+            "file": "Chains.png",
+            "thumbnail": "thumbnails/Chains.png"
+        },
+        {
+            "file": "Chemfinal.jpg",
+            "thumbnail": "thumbnails/Chemfinal.jpg"
+        },
+        {
+            "file": "Colorful Marble 2.png",
+            "thumbnail": "thumbnails/Colorful Marble 2.png"
+        },
+        {
+            "file": "Colorful Marble 3.png",
+            "thumbnail": "thumbnails/Colorful Marble 3.png"
+        },
+        {
+            "file": "Colorful Marble 4.png",
+            "thumbnail": "thumbnails/Colorful Marble 4.png"
+        },
+        {
+            "file": "Colorful Marble.png",
+            "thumbnail": "thumbnails/Colorful Marble.png"
+        },
+        {
+            "file": "Dance Pattern A.png",
+            "thumbnail": "thumbnails/Dance Pattern A.png"
+        },
+        {
+            "file": "Dance Pattern B.png",
+            "thumbnail": "thumbnails/Dance Pattern B.png"
+        },
+        {
+            "file": "DE SN Ped Test 1 Airoads LAS Dark.png",
+            "thumbnail": "thumbnails/DE SN Ped Test 1 Airoads LAS Dark.png"
+        },
+        {
+            "file": "DE SN Ped Test 1 Airoads LAS.png",
+            "thumbnail": "thumbnails/DE SN Ped Test 1 Airoads LAS.png"
+        },
+        {
+            "file": "Deftones Diamond Eyes HW.jpg",
+            "thumbnail": "thumbnails/Deftones Diamond Eyes HW.jpg"
+        },
+        {
+            "file": "Desert Camo 2.png",
+            "thumbnail": "thumbnails/Desert Camo 2.png"
+        },
+        {
+            "file": "Desert Camo.png",
+            "thumbnail": "thumbnails/Desert Camo.png"
+        },
+        {
+            "file": "Digital Camo 2.png",
+            "thumbnail": "thumbnails/Digital Camo 2.png"
+        },
+        {
+            "file": "Digital Camo.png",
+            "thumbnail": "thumbnails/Digital Camo.png"
+        },
+        {
+            "file": "Dimebag Darrell.png",
+            "thumbnail": "thumbnails/Dimebag Darrell.png"
+        },
+        {
+            "file": "DirtyHertz.png",
+            "thumbnail": "thumbnails/DirtyHertz.png"
+        },
+        {
+            "file": "Dragon Flower.jpg",
+            "thumbnail": "thumbnails/Dragon Flower.jpg"
+        },
+        {
+            "file": "Dusty Camo.png",
+            "thumbnail": "thumbnails/Dusty Camo.png"
+        },
+        {
+            "file": "ERDL Camo.png",
+            "thumbnail": "thumbnails/ERDL Camo.png"
+        },
+        {
+            "file": "Eva.jpg",
+            "thumbnail": "thumbnails/Eva.jpg"
+        },
+        {
+            "file": "Fall Camo.png",
+            "thumbnail": "thumbnails/Fall Camo.png"
+        },
+        {
+            "file": "Flora Camo.png",
+            "thumbnail": "thumbnails/Flora Camo.png"
+        },
+        {
+            "file": "GH 6 Proto Effect Highway OG.png",
+            "thumbnail": "thumbnails/GH 6 Proto Effect Highway OG.png"
+        },
+        {
+            "file": "GH 6 Proto Effect Highway Purple.png",
+            "thumbnail": "thumbnails/GH 6 Proto Effect Highway Purple.png"
+        },
+        {
+            "file": "GH6 Proto Highway.png",
+            "thumbnail": "thumbnails/GH6 Proto Highway.png"
+        },
+        {
+            "file": "GHTV (Neck).png",
+            "thumbnail": "thumbnails/GHTV (Neck).png"
+        },
+        {
+            "file": "GIR Highway Test 2.jpg",
+            "thumbnail": "thumbnails/GIR Highway Test 2.jpg"
+        },
+        {
+            "file": "Gold Camo 2.png",
+            "thumbnail": "thumbnails/Gold Camo 2.png"
+        },
+        {
+            "file": "Gold Camo.png",
+            "thumbnail": "thumbnails/Gold Camo.png"
+        },
+        {
+            "file": "Goofy Goober Highway.png",
+            "thumbnail": "thumbnails/Goofy Goober Highway.png"
+        },
+        {
+            "file": "Gorillaz 2024.png",
+            "thumbnail": "thumbnails/Gorillaz 2024.png"
+        },
+        {
+            "file": "Greed.png",
+            "thumbnail": "thumbnails/Greed.png"
+        },
+        {
+            "file": "Green Highway.png",
+            "thumbnail": "thumbnails/Green Highway.png"
+        },
+        {
+            "file": "Haggis.jpg",
+            "thumbnail": "thumbnails/Haggis.jpg"
+        },
+        {
+            "file": "Highway Pattern 2.png",
+            "thumbnail": "thumbnails/Highway Pattern 2.png"
+        },
+        {
+            "file": "Hooked On Classics.jpg",
+            "thumbnail": "thumbnails/Hooked On Classics.jpg"
+        },
+        {
+            "file": "Ice Camo.png",
+            "thumbnail": "thumbnails/Ice Camo.png"
+        },
+        {
+            "file": "iZenPenguin.jpg",
+            "thumbnail": "thumbnails/iZenPenguin.jpg"
+        },
+        {
+            "file": "JdurandTV.jpg",
+            "thumbnail": "thumbnails/JdurandTV.jpg"
+        },
+        {
+            "file": "Joey D.jpg",
+            "thumbnail": "thumbnails/Joey D.jpg"
+        },
+        {
+            "file": "Jojo Highway.jpg",
+            "thumbnail": "thumbnails/Jojo Highway.jpg"
+        },
+        {
+            "file": "Jojo Purple Highway.jpg",
+            "thumbnail": "thumbnails/Jojo Purple Highway.jpg"
+        },
+        {
+            "file": "Light Saber.jpg",
+            "thumbnail": "thumbnails/Light Saber.jpg"
+        },
+        {
+            "file": "Lust.png",
+            "thumbnail": "thumbnails/Lust.png"
+        },
+        {
+            "file": "Marble 3.png",
+            "thumbnail": "thumbnails/Marble 3.png"
+        },
+        {
+            "file": "Marble.png",
+            "thumbnail": "thumbnails/Marble.png"
+        },
+        {
+            "file": "Marx.png",
+            "thumbnail": "thumbnails/Marx.png"
+        },
+        {
+            "file": "Miscellany.jpg",
+            "thumbnail": "thumbnails/Miscellany.jpg"
+        },
+        {
+            "file": "Neon Highway.png",
+            "thumbnail": "thumbnails/Neon Highway.png"
+        },
+        {
+            "file": "Nevada Camo.png",
+            "thumbnail": "thumbnails/Nevada Camo.png"
+        },
+        {
+            "file": "OG SN Ped Test 1 Airoads LAS Dark.png",
+            "thumbnail": "thumbnails/OG SN Ped Test 1 Airoads LAS Dark.png"
+        },
+        {
+            "file": "OG SN Ped Test 1 Airoads LAS.png",
+            "thumbnail": "thumbnails/OG SN Ped Test 1 Airoads LAS.png"
+        },
+        {
+            "file": "Ohm.jpg",
+            "thumbnail": "thumbnails/Ohm.jpg"
+        },
+        {
+            "file": "Olive Camo.png",
+            "thumbnail": "thumbnails/Olive Camo.png"
+        },
+        {
+            "file": "Pandas Love Rainbows.png",
+            "thumbnail": "thumbnails/Pandas Love Rainbows.png"
+        },
+        {
+            "file": "Partially Transparent (Undecided to keep or not).png",
+            "thumbnail": "thumbnails/Partially Transparent (Undecided to keep or not).png"
+        },
+        {
+            "file": "Peddy.jpg",
+            "thumbnail": "thumbnails/Peddy.jpg"
+        },
+        {
+            "file": "Pink Highway.png",
+            "thumbnail": "thumbnails/Pink Highway.png"
+        },
+        {
+            "file": "Pokemon Highway-Railing.png",
+            "thumbnail": "thumbnails/Pokemon Highway-Railing.png"
+        },
+        {
+            "file": "PSX Wipeout.png",
+            "thumbnail": "thumbnails/PSX Wipeout.png"
+        },
+        {
+            "file": "Purp Roses Red.png",
+            "thumbnail": "thumbnails/Purp Roses Red.png"
+        },
+        {
+            "file": "Purple Ice.png",
+            "thumbnail": "thumbnails/Purple Ice.png"
+        },
+        {
+            "file": "Purple Snake (238170).jpg",
+            "thumbnail": "thumbnails/Purple Snake (238170).jpg"
+        },
+        {
+            "file": "Q. o. t. S. A.png",
+            "thumbnail": "thumbnails/Q. o. t. S. A.png"
+        },
+        {
+            "file": "R Decyrs.png",
+            "thumbnail": "thumbnails/R Decyrs.png"
+        },
+        {
+            "file": "Red Belt.png",
+            "thumbnail": "thumbnails/Red Belt.png"
+        },
+        {
+            "file": "Red Camo.png",
+            "thumbnail": "thumbnails/Red Camo.png"
+        },
+        {
+            "file": "Red Tiger Camo 2.png",
+            "thumbnail": "thumbnails/Red Tiger Camo 2.png"
+        },
+        {
+            "file": "Red Tiger Camo.png",
+            "thumbnail": "thumbnails/Red Tiger Camo.png"
+        },
+        {
+            "file": "Rinnegan.jpg",
+            "thumbnail": "thumbnails/Rinnegan.jpg"
+        },
+        {
+            "file": "Route FrLf Highway.png",
+            "thumbnail": "thumbnails/Route FrLf Highway.png"
+        },
+        {
+            "file": "Rusty Cage Tp.png",
+            "thumbnail": "thumbnails/Rusty Cage Tp.png"
+        },
+        {
+            "file": "SA2B Dark.png",
+            "thumbnail": "thumbnails/SA2B Dark.png"
+        },
+        {
+            "file": "SA2B Mono.png",
+            "thumbnail": "thumbnails/SA2B Mono.png"
+        },
+        {
+            "file": "SA2B Muted.png",
+            "thumbnail": "thumbnails/SA2B Muted.png"
+        },
+        {
+            "file": "SA2B.png",
+            "thumbnail": "thumbnails/SA2B.png"
+        },
+        {
+            "file": "Sahara Camo.png",
+            "thumbnail": "thumbnails/Sahara Camo.png"
+        },
+        {
+            "file": "Sanrio.png",
+            "thumbnail": "thumbnails/Sanrio.png"
+        },
+        {
+            "file": "Sanriosee.png",
+            "thumbnail": "thumbnails/Sanriosee.png"
+        },
+        {
+            "file": "Shattering Lightning.png",
+            "thumbnail": "thumbnails/Shattering Lightning.png"
+        },
+        {
+            "file": "Siberia Camo.png",
+            "thumbnail": "thumbnails/Siberia Camo.png"
+        },
+        {
+            "file": "Simple Darker WoR Highway.png",
+            "thumbnail": "thumbnails/Simple Darker WoR Highway.png"
+        },
+        {
+            "file": "Star Wars Datapad Black Wallpaper Scaled.jpg",
+            "thumbnail": "thumbnails/Star Wars Datapad Black Wallpaper Scaled.jpg"
+        },
+        {
+            "file": "Stars And Stripes Darkened.jpg",
+            "thumbnail": "thumbnails/Stars And Stripes Darkened.jpg"
+        },
+        {
+            "file": "Stars And Stripes Full Saturation.jpg",
+            "thumbnail": "thumbnails/Stars And Stripes Full Saturation.jpg"
+        },
+        {
+            "file": "Stars And Stripes Monochrome.jpg",
+            "thumbnail": "thumbnails/Stars And Stripes Monochrome.jpg"
+        },
+        {
+            "file": "Steins Gate.png",
+            "thumbnail": "thumbnails/Steins Gate.png"
+        },
+        {
+            "file": "Stickheadz32.jpg",
+            "thumbnail": "thumbnails/Stickheadz32.jpg"
+        },
+        {
+            "file": "Supahfast198.jpg",
+            "thumbnail": "thumbnails/Supahfast198.jpg"
+        },
+        {
+            "file": "Tiger Camo.png",
+            "thumbnail": "thumbnails/Tiger Camo.png"
+        },
+        {
+            "file": "Trivium Dragon Dark 2.png",
+            "thumbnail": "thumbnails/Trivium Dragon Dark 2.png"
+        },
+        {
+            "file": "Trivium Dragon Dark.png",
+            "thumbnail": "thumbnails/Trivium Dragon Dark.png"
+        },
+        {
+            "file": "Untitled 122_20241027234020.png",
+            "thumbnail": "thumbnails/Untitled 122_20241027234020.png"
+        },
+        {
+            "file": "Up Highway.png",
+            "thumbnail": "thumbnails/Up Highway.png"
+        },
+        {
+            "file": "Urban Camo.png",
+            "thumbnail": "thumbnails/Urban Camo.png"
+        },
+        {
+            "file": "Warsaw Camo.png",
+            "thumbnail": "thumbnails/Warsaw Camo.png"
+        },
+        {
+            "file": "White Pony BB.jpg",
+            "thumbnail": "thumbnails/White Pony BB.jpg"
+        },
+        {
+            "file": "White Pony OG.jpg",
+            "thumbnail": "thumbnails/White Pony OG.jpg"
+        },
+        {
+            "file": "Wii WoR.png",
+            "thumbnail": "thumbnails/Wii WoR.png"
+        },
+        {
+            "file": "Wipeout Highway.png",
+            "thumbnail": "thumbnails/Wipeout Highway.png"
+        },
+        {
+            "file": "Wooden Highway by Kanske.png",
+            "thumbnail": "thumbnails/Wooden Highway by Kanske.png"
+        },
+        {
+            "file": "Woodland Camo 2.png",
+            "thumbnail": "thumbnails/Woodland Camo 2.png"
+        },
+        {
+            "file": "Woodland Camo 3.png",
+            "thumbnail": "thumbnails/Woodland Camo 3.png"
+        },
+        {
+            "file": "Woodland Camo.png",
+            "thumbnail": "thumbnails/Woodland Camo.png"
+        },
+        {
+            "file": "Yellow Belt.png",
+            "thumbnail": "thumbnails/Yellow Belt.png"
+        },
+        {
+            "file": "Yukon Camo.png",
+            "thumbnail": "thumbnails/Yukon Camo.png"
+        }
+    ],
+    "errors": {
+        "test_broken_missing_field.ini": {
+            "Invalid Hex Code Value": [
+                "note_green",
+                "note_red",
+                "note_yellow",
+                "note_blue",
+                "note_orange",
+                "note_open"
+            ]
+        },
+        "test_broken_multi_errors.ini": {
+            "Invalid Hex Code Value": [
+                "note_green",
+                "note_yellow",
+                "note_blue",
+                "note_open"
+            ]
+        }
+    },
+    "warnings": {
+        "test_broken_multi_errors.ini": {
+            "Invalid Hex Code Value": [
+                "drums_striker_base_green"
+            ]
+        }
+    }
+}

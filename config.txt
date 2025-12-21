@@ -1,0 +1,7 @@
+# Actual locations
+highways_actual=G:\Clone Hero\PlayerData\Custom\Highways
+color_profiles_actual=G:\Clone Hero\PlayerData\Custom\Colors
+
+# Test locations
+highways_test=S:\Backups\Current Desktop\Custom\Highways
+color_profiles_test=S:\Backups\Current Desktop\Custom\Colors
