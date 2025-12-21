@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-12-21 09:22:07.325025",
+    "timestamp": "2025-12-21 09:46:28.275368",
     "highways": [
         "0.png",
         "100 Laugh.png",
@@ -1280,7 +1280,7 @@
         "Meliodas Elizabeth 08.jpg",
         "Meliodas Elizabeth 09.jpg",
         "Meliodas Elizabeth 10.jpg",
-        "Meliodas Elizabeth 11.jpg",
+        "Meliodas Elizabeth 11.png",
         "Meliodas Elizabeth 12.jpg",
         "Meliodas Elizabeth 13.jpg",
         "Meliodas Elizabeth 14.jpg",
@@ -2049,7 +2049,7 @@
         "Straps and Chains.png",
         "Strawberries Dark Red.png",
         "Strawberries Dark.png",
-        "Strawberries.png",
+        "Strawberries.jpg",
         "Streak.png",
         "Street Fighter.png",
         "Strum Note Lanes.png",
@@ -2077,7 +2077,7 @@
         "Suzaku Euphemia 13.png",
         "Suzaku Euphemia 14.jpg",
         "Suzaku Euphemia 15.png",
-        "Suzaku Euphemia 16.jpg",
+        "Suzaku Euphemia 16.png",
         "Suzaku Euphemia 17.jpg",
         "Suzaku Euphemia 18.jpg",
         "Suzaku Euphemia 19.jpg",
@@ -2373,10 +2373,10 @@
         "Yu Rise 13.png",
         "Yu Rise 14.jpg",
         "Yu Rise 15.jpg",
-        "Yu Rise 16.jpg",
-        "Yu Rise 17.jpg",
+        "Yu Rise 16.png",
+        "Yu Rise 17.png",
         "Yu Rise 18.jpg",
-        "Yu Rise 19.jpg",
+        "Yu Rise 19.png",
         "Yu Rise 20.jpg",
         "Yu Rise 21.jpg",
         "Yu Rise 22.jpg",
@@ -2421,17 +2421,17 @@
         "ZGS B06.png",
         "ZGS B07.png",
         "Zodiac 01 (Aries).png",
-        "Zodiac 02 (Taurus).png",
-        "Zodiac 03 (Gemini).png",
-        "Zodiac 04 (Cancer).png",
-        "Zodiac 05 (Leo).png",
-        "Zodiac 06 (Virgo).png",
-        "Zodiac 07 (Libra).png",
-        "Zodiac 08 (Scorpio).png",
-        "Zodiac 09 (Sagittarius).png",
-        "Zodiac 10 (Capricorn).png",
-        "Zodiac 11 (Aquarius).png",
-        "Zodiac 12 (Pisces).png",
+        "Zodiac 02 (Taurus).jpg",
+        "Zodiac 03 (Gemini).jpg",
+        "Zodiac 04 (Cancer).jpg",
+        "Zodiac 05 (Leo).jpg",
+        "Zodiac 06 (Virgo).jpg",
+        "Zodiac 07 (Libra).jpg",
+        "Zodiac 08 (Scorpio).jpg",
+        "Zodiac 09 (Sagittarius).jpg",
+        "Zodiac 10 (Capricorn).jpg",
+        "Zodiac 11 (Aquarius).jpg",
+        "Zodiac 12 (Pisces).jpg",
         "Zombie Head.png"
     ],
     "color_profiles": [
@@ -8086,6 +8086,10 @@
             "thumbnail": "thumbnails/Meliodas Elizabeth 10.jpg"
         },
         {
+            "file": "Meliodas Elizabeth 11.png",
+            "thumbnail": "thumbnails/Meliodas Elizabeth 11.png"
+        },
+        {
             "file": "Meliodas Elizabeth 12.jpg",
             "thumbnail": "thumbnails/Meliodas Elizabeth 12.jpg"
         },
@@ -11154,8 +11158,8 @@
             "thumbnail": "thumbnails/Strawberries Dark Red.png"
         },
         {
-            "file": "Strawberries.png",
-            "thumbnail": "thumbnails/Strawberries.png"
+            "file": "Strawberries.jpg",
+            "thumbnail": "thumbnails/Strawberries.jpg"
         },
         {
             "file": "Streak.png",
@@ -11264,6 +11268,10 @@
         {
             "file": "Suzaku Euphemia 15.png",
             "thumbnail": "thumbnails/Suzaku Euphemia 15.png"
+        },
+        {
+            "file": "Suzaku Euphemia 16.png",
+            "thumbnail": "thumbnails/Suzaku Euphemia 16.png"
         },
         {
             "file": "Suzaku Euphemia 17.jpg",
@@ -12446,8 +12454,20 @@
             "thumbnail": "thumbnails/Yu Rise 15.jpg"
         },
         {
+            "file": "Yu Rise 16.png",
+            "thumbnail": "thumbnails/Yu Rise 16.png"
+        },
+        {
+            "file": "Yu Rise 17.png",
+            "thumbnail": "thumbnails/Yu Rise 17.png"
+        },
+        {
             "file": "Yu Rise 18.jpg",
             "thumbnail": "thumbnails/Yu Rise 18.jpg"
+        },
+        {
+            "file": "Yu Rise 19.png",
+            "thumbnail": "thumbnails/Yu Rise 19.png"
         },
         {
             "file": "Yu Rise 20.jpg",
