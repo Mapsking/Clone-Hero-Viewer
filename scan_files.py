@@ -92,6 +92,12 @@ os.makedirs(thumbnail_folder, exist_ok=True)
 
 thumbnails_info = []
 
+# Clear existing thumbnails to keep folder in sync
+for existing_file in os.listdir(thumbnail_folder):
+    file_path = os.path.join(thumbnail_folder, existing_file)
+    if os.path.isfile(file_path):
+        os.remove(file_path)
+
 for file_path in highway_files:
     try:
         with Image.open(file_path) as img:
