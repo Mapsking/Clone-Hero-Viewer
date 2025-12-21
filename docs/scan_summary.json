@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-12-21 09:06:14.920549",
+    "timestamp": "2025-12-21 09:22:07.325025",
     "highways": [
         "0.png",
         "100 Laugh.png",
@@ -1232,7 +1232,7 @@
         "Maria Highway 25.jpg",
         "Maria Highway 26.png",
         "Maria Highway 27.jpg",
-        "Maria Highway 28.jpg",
+        "Maria Highway 28.png",
         "Maria Highway 29.jpg",
         "Maria Highway 30.jpg",
         "Maria Highway 31.jpg",
@@ -7892,6 +7892,10 @@
         {
             "file": "Maria Highway 27.jpg",
             "thumbnail": "thumbnails/Maria Highway 27.jpg"
+        },
+        {
+            "file": "Maria Highway 28.png",
+            "thumbnail": "thumbnails/Maria Highway 28.png"
         },
         {
             "file": "Maria Highway 29.jpg",
