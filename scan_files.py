@@ -3,7 +3,6 @@ import configparser
 import re
 from PIL import Image
 import json
-import subprocess
 
 # -------------------------
 # ANSI color codes
@@ -214,6 +213,7 @@ with open(summary_path, "w", encoding="utf-8") as f:
 
 json_summary = {
     "timestamp": str(datetime.now()),
+	"scan_mode": scan_choice,
     "highways": [os.path.basename(f) for f in highway_files],
     "color_profiles": [os.path.basename(f) for f in ini_files],
     "thumbnails": thumbnails_info,
@@ -227,13 +227,3 @@ json_path = os.path.join("docs", "scan_summary.json")
 with open(json_path, "w", encoding="utf-8") as f:
     json.dump(json_summary, f, indent=4)
 
-def git_push_changes(commit_message="Update site from scan"):
-    try:
-        subprocess.run(["git", "add", "-A"], check=True)
-        subprocess.run(["git", "commit", "-m", commit_message], check=True)
-        subprocess.run(["git", "push", "origin", "main"], check=True)
-        print("✅ Changes pushed to GitHub successfully.")
-    except subprocess.CalledProcessError as e:
-        print(f"❌ Git error: {e}")
-
-git_push_changes()
