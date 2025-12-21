@@ -186,8 +186,8 @@ if errors_dict:
         print(f"{ERROR_FILE_COLOR}{fname}:{RESET}")
         for category, fields in error_entries.items():
             print(f"    {ERROR_DESC_COLOR}{category}:{RESET}")
-            for f in fields:
-                print(f"        {FIELD_COLOR}{f}{RESET}")
+            # for f in fields:
+                # print(f"        {FIELD_COLOR}{f}{RESET}")
         print()  # blank line after each file
 
 # Warnings
@@ -197,8 +197,8 @@ if warnings_dict:
         print(f"{WARNING_FILE_COLOR}{fname}:{RESET}")
         for category, fields in warning_entries.items():
             print(f"    {WARNING_DESC_COLOR}{category}:{RESET}")
-            for f in fields:
-                print(f"        {FIELD_COLOR}{f}{RESET}")
+            # for f in fields:
+                # print(f"        {FIELD_COLOR}{f}{RESET}")
         print()  # blank line after each file
 
 from datetime import datetime
