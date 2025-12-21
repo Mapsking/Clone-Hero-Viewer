@@ -223,7 +223,7 @@ with open(json_path, "w", encoding="utf-8") as f:
 
 def git_push_changes(commit_message="Update site from scan"):
     try:
-        subprocess.run(["git", "add", "."], check=True)
+        subprocess.run(["git", "add", "-A"], check=True)
         subprocess.run(["git", "commit", "-m", commit_message], check=True)
         subprocess.run(["git", "push", "origin", "main"], check=True)
         print("✅ Changes pushed to GitHub successfully.")
