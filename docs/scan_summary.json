@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-12-22 20:26:09.631690",
+    "timestamp": "2025-12-22 20:30:08.934620",
     "scan_mode": "A",
     "duplicate_filenames": {},
     "duplicate_images": {},
@@ -1958,128 +1958,7 @@
         "Zero Punctuation.ini",
         "Ziannde.ini"
     ],
-    "thumbnails": [
-        {
-            "file": "3-UP.png",
-            "thumbnail": "thumbnails/3-UP.png"
-        },
-        {
-            "file": "Chemfinal.jpg",
-            "thumbnail": "thumbnails/Chemfinal.jpg"
-        },
-        {
-            "file": "DirtyHertz.png",
-            "thumbnail": "thumbnails/DirtyHertz.png"
-        },
-        {
-            "file": "Eva.jpg",
-            "thumbnail": "thumbnails/Eva.jpg"
-        },
-        {
-            "file": "Haggis.jpg",
-            "thumbnail": "thumbnails/Haggis.jpg"
-        },
-        {
-            "file": "Hooked On Classics.jpg",
-            "thumbnail": "thumbnails/Hooked On Classics.jpg"
-        },
-        {
-            "file": "iZenPenguin.jpg",
-            "thumbnail": "thumbnails/iZenPenguin.jpg"
-        },
-        {
-            "file": "JdurandTV.jpg",
-            "thumbnail": "thumbnails/JdurandTV.jpg"
-        },
-        {
-            "file": "Joey D.jpg",
-            "thumbnail": "thumbnails/Joey D.jpg"
-        },
-        {
-            "file": "Miscellany.jpg",
-            "thumbnail": "thumbnails/Miscellany.jpg"
-        },
-        {
-            "file": "Ohm.jpg",
-            "thumbnail": "thumbnails/Ohm.jpg"
-        },
-        {
-            "file": "Peddy.jpg",
-            "thumbnail": "thumbnails/Peddy.jpg"
-        },
-        {
-            "file": "Stickheadz32.jpg",
-            "thumbnail": "thumbnails/Stickheadz32.jpg"
-        },
-        {
-            "file": "Supahfast198.jpg",
-            "thumbnail": "thumbnails/Supahfast198.jpg"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        },
-        {
-            "file": "ZGS B07.png",
-            "thumbnail": "thumbnails/ZGS B07.png"
-        }
-    ],
+    "thumbnails": [],
     "errors": {},
     "warnings": {},
     "color_profiles_data": [
