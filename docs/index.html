@@ -11,32 +11,41 @@
 </head>
 <body>
     <h1>Clone Hero Viewer</h1>
-	<p id="scanMode">Loading scan mode…</p>
+    <p id="scanMode">Loading scan mode…</p>
     <div id="highways"></div>
 
     <script>
-        <script>
-    fetch('scan_summary.json')
-    .then(response => response.json())
-    .then(data => {
-        // Show scan mode
-        const scanMode = document.getElementById('scanMode');
-        scanMode.textContent = `Scan Mode: ${data.scan_mode || "Unknown"}`;
+        fetch('scan_summary.json') // adjust path if needed
+        .then(response => response.json())
+        .then(data => {
+            // Show scan mode
+            document.getElementById('scanMode').textContent = `Scan Mode: ${data.scan_mode || "Unknown"}`;
 
-        const container = document.getElementById('highways');
-        data.thumbnails.forEach(item => {
-            const div = document.createElement('div');
-            div.className = 'thumbnail';
-            const img = document.createElement('img');
-            img.src = './' + item.thumbnail;
-            div.appendChild(img);
-            const caption = document.createElement('div');
-            caption.textContent = item.file;
-            div.appendChild(caption);
-            container.appendChild(div);
+            // Display highway thumbnails
+            const container = document.getElementById('highways');
+            const seen = new Set(); // prevent duplicates
+            data.thumbnails.forEach(item => {
+                if (seen.has(item.file)) return;
+                seen.add(item.file);
+
+                const div = document.createElement('div');
+                div.className = 'thumbnail';
+
+                const img = document.createElement('img');
+                img.src = './' + item.thumbnail;
+                div.appendChild(img);
+
+                const caption = document.createElement('div');
+                caption.textContent = item.file.replace(/\.[^/.]+$/, ""); // remove extension
+                div.appendChild(caption);
+
+                container.appendChild(div);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading scan_summary.json:', error);
+            document.getElementById('highways').textContent = "Error loading scan_summary.json";
         });
-    })
-    .catch(error => console.error('Error loading JSON:', error));
-</script>
+    </script>
 </body>
 </html>
