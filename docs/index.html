@@ -5,89 +5,119 @@
     <title>Clone Hero Viewer</title>
     <style>
         body { font-family: Arial, sans-serif; padding: 20px; }
-        .thumbnail { display: inline-block; margin: 5px; text-align: center; }
-        img { max-width: 150px; max-height: 150px; display: block; margin-bottom: 5px; }
-        details { margin-bottom: 10px; }
-        summary { cursor: pointer; font-weight: bold; }
+
+        .thumbnail {
+            display: inline-block;
+            margin: 8px;
+            text-align: center;
+            width: 160px;
+        }
+
+        img {
+            max-width: 150px;
+            max-height: 150px;
+            display: block;
+            margin: 0 auto 5px;
+        }
+
+        .swatches {
+            display: flex;
+            gap: 6px;
+            margin: 6px 0 12px;
+        }
+
+        .swatch {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <h1>Clone Hero Viewer</h1>
-    <p id="scanMode">Loading scan mode…</p>
 
-    <h2>Highways</h2>
-    <div id="highways"></div>
+<h1>Clone Hero Viewer</h1>
+<p id="scanMode">Loading scan mode…</p>
 
-    <h2>Color Profiles</h2>
-    <div id="colorProfiles"></div>
+<h2>Highways</h2>
+<div id="highways"></div>
 
-    <script>
-    fetch('scan_summary.json')
-    .then(response => response.json())
+<h2>Color Profiles</h2>
+<div id="colorProfiles"></div>
+
+<script>
+fetch('scan_summary.json')
+    .then(r => r.json())
     .then(data => {
-        // Show scan mode
-        const scanMode = document.getElementById('scanMode');
-        scanMode.textContent = `Scan Mode: ${data.scan_mode || "Unknown"}`;
 
-        // Display thumbnails
-        const container = document.getElementById('highways');
+        // Scan mode
+        document.getElementById('scanMode').textContent =
+            `Scan Mode: ${data.scan_mode || 'Unknown'}`;
+
+        // Highways
+        const highways = document.getElementById('highways');
         data.thumbnails.forEach(item => {
             const div = document.createElement('div');
             div.className = 'thumbnail';
 
             const img = document.createElement('img');
-            img.src = './' + item.thumbnail;
+            img.src = item.thumbnail;
             div.appendChild(img);
 
-            const caption = document.createElement('div');
-            caption.textContent = item.file;
-            div.appendChild(caption);
+            const cap = document.createElement('div');
+            cap.textContent = item.file.replace(/\.[^/.]+$/, '');
+            div.appendChild(cap);
 
-            container.appendChild(div);
+            highways.appendChild(div);
         });
 
-        // Display color profiles
-        const profilesContainer = document.getElementById('colorProfiles');
+        // Color Profiles
+        const profiles = document.getElementById('colorProfiles');
+
         data.color_profiles_data.forEach(profile => {
-            const section = document.createElement('details');
-            section.open = false;  // collapsed by default
+            const details = document.createElement('details');
+            details.open = false;
 
             const summary = document.createElement('summary');
-            summary.textContent = profile.filename.replace('.ini',''); // remove extension
-            section.appendChild(summary);
+            summary.textContent = profile.filename.replace('.ini', '');
+            details.appendChild(summary);
 
-            const swatchContainer = document.createElement('div');
-            swatchContainer.style.display = 'flex';
-            swatchContainer.style.gap = '5px';
-            swatchContainer.style.marginTop = '5px';
+            const row = document.createElement('div');
+            row.className = 'swatches';
 
-            // Fields in order: G, R, Y, B, O, SP, Open
-            ['note_green','note_red','note_yellow','note_blue','note_orange','note_sp_active','note_open'].forEach(field => {
+            [
+                'note_green',
+                'note_red',
+                'note_yellow',
+                'note_blue',
+                'note_orange',
+                'note_sp_active',
+                'note_open'
+            ].forEach(field => {
                 const swatch = document.createElement('div');
-                swatch.style.width = '50px';
-                swatch.style.height = '50px';
-                swatch.style.border = '1px solid black';
-                swatch.style.display = 'flex';
-                swatch.style.alignItems = 'center';
-                swatch.style.justifyContent = 'center';
-                swatch.style.fontSize = '20px';
+                swatch.className = 'swatch';
 
-                const value = profile[field];
-                if(value) {
-                    swatch.style.backgroundColor = value;
+                if (profile[field]) {
+                    swatch.style.backgroundColor = profile[field];
                 } else {
-                    swatch.textContent = 'X'; // empty field
+                    swatch.textContent = 'X';
                 }
 
-                swatchContainer.appendChild(swatch);
+                row.appendChild(swatch);
             });
 
-            section.appendChild(swatchContainer);
-            profilesContainer.appendChild(section);
+            details.appendChild(row);
+            profiles.appendChild(details);
         });
-
     })
-    .catch(error => console.error('Error loading JSON:', error));
-    </script>
+    .catch(err => {
+        document.body.innerHTML += `<p style="color:red">Error loading scan_summary.json</p>`;
+        console.error(err);
+    });
+</script>
+
 </body>
 </html>
