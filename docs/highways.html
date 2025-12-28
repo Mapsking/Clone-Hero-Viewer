@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Clone Hero Viewer - Highways</title>
+
+<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="index_bar.css">
+</head>
+
+<body>
+
+<h1 id="page-title">Clone Hero Viewer - Highways</h1>
+
+<div class="top-info">
+  <span id="scan-mode">Scan mode: <strong></strong></span>
+</div>
+
+<script>
+fetch('docs/scan_summary.json')
+  .then(res => res.json())
+  .then(data => {
+    const count = data.highways.length;
+    document.getElementById('page-title').textContent =
+      `Clone Hero Viewer - Highways (${count})`;
+  })
+  .catch(err => console.error('Error loading scan_summary.json:', err));
+</script>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="color_profiles.html">Color Profiles</a>
+    <a href="highways.html">Highways</a>
+    <a href="Image_bgs.html">Image Backgrounds</a>
+    <a href="Video_bgs.html">Video Backgrounds</a>
+    <a href="Video_highways.html">Video Highways</a>
+</nav>
+
+<!-- Sidebar -->
+<div id="indexSidebar">
+
+    <!-- Top row -->
+    <div id="topRow">
+        <!-- Numbers + Letters added via JS -->
+    </div>
+
+    <!-- Bottom row -->
+    <div id="bottomRow">
+        <input type="text" id="indexSearch" placeholder="Search">
+        <span id="sliderLabel">Choose highway size:</span>
+        <input type="range" id="thumbSizeSlider" min="0" max="11" value="0">
+        <span id="thumbSizeValue"></span>
+    </div>
+
+</div>
+
+<div id="highways"></div>
+
+<script>
+const slider = document.getElementById('thumbSizeSlider');
+const sizeValue = document.getElementById('thumbSizeValue');
+const columnSteps = [6,7,8,9,10,11,12,13,14,15,16,17];
+const sizeLabels = [
+    "Quantum Ant Man",
+    "LEGO Emmet",
+    "Sonic Screwdriver",
+    "Minion",
+    "Hobbit",
+    "Wreck-it Ralph",
+    "Smaug",
+    "Stay-Puft Marshmallow Man",
+    "Stark Tower",
+    "Drej Mothership",
+    "Death Star",
+    "Gallifrey"
+];
+
+const indexSidebar = document.getElementById('indexSidebar');
+const topRow = document.getElementById('topRow');
+const bottomRow = document.getElementById('bottomRow');
+
+/* ===== Numbers button ===== */
+const numbersBtn = document.createElement('div');
+numbersBtn.textContent = '0-9';
+numbersBtn.dataset.letter = '0-9';
+numbersBtn.className = 'indexButton';
+topRow.appendChild(numbersBtn);
+
+/* ===== Letter buttons ===== */
+const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+letters.forEach(l => {
+    const btn = document.createElement('div');
+    btn.textContent = l;
+    btn.dataset.letter = l;
+    btn.className = 'indexButton';
+    topRow.appendChild(btn);
+});
+
+/* ===== Back to top button ===== */
+const topBtn = document.createElement('div');
+topBtn.textContent = '(↑)';
+topBtn.title = 'Back to top';
+topBtn.className = 'indexButton topButton';
+topBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+topRow.appendChild(topBtn);
+
+/* ===== Load thumbnails ===== */
+fetch('scan_summary.json')
+.then(r => r.json())
+.then(data => {
+    const container = document.getElementById('highways');
+
+    data.thumbnails.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'thumbnail';
+        card.dataset.filename = item.file.toUpperCase();
+
+        if (item.transparent) {
+            card.classList.add('transparent');
+        }
+
+        const box = document.createElement('div');
+        box.className = 'thumbnail-box';
+
+        const img = document.createElement('img');
+        img.src = './' + item.thumbnail;
+        box.appendChild(img);
+
+        const caption = document.createElement('div');
+        caption.className = 'thumbnail-caption';
+        caption.textContent = item.file.replace(/\.[^/.]+$/, '');
+
+        const btn = document.createElement('button');
+        btn.className = 'download-btn';
+        btn.textContent = 'Download';
+        btn.onclick = () => {
+            const a = document.createElement('a');
+            a.href = './' + item.file;
+            a.download = item.file;
+            a.click();
+        };
+
+        card.append(box, caption, btn);
+        container.appendChild(card);
+    });
+
+    function updateThumbnailSizes() {
+        const columns = columnSteps[columnSteps.length - 1 - slider.value];
+        const gap = 10;
+        const w = (container.clientWidth - gap * (columns - 1)) / columns;
+        const h = w * 2;
+
+        container.style.gridTemplateColumns =
+            `repeat(auto-fill, minmax(${w}px, 1fr))`;
+
+        document.querySelectorAll('.thumbnail-box, .thumbnail-box img')
+            .forEach(el => {
+                el.style.width = w + 'px';
+                el.style.height = h + 'px';
+            });
+
+        sizeValue.textContent = sizeLabels[slider.value];
+    }
+
+    slider.value = 0;
+    updateThumbnailSizes();
+    slider.addEventListener('input', updateThumbnailSizes);
+    window.addEventListener('resize', updateThumbnailSizes);
+
+    topRow.querySelectorAll('.indexButton').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetLetter = btn.dataset.letter;
+            let found = null;
+
+            const thumbs = container.querySelectorAll('.thumbnail');
+            thumbs.forEach(t => {
+                const firstChar = t.dataset.filename[0];
+                if (
+                    targetLetter === '0-9' && /\d/.test(firstChar) && !found ||
+                    firstChar === targetLetter && !found
+                ) {
+                    found = t;
+                }
+            });
+
+            if (found) {
+                found.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    const searchInput = document.getElementById('indexSearch');
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toUpperCase();
+        container.querySelectorAll('.thumbnail').forEach(t => {
+            t.style.display =
+                t.dataset.filename.includes(query) ? '' : 'none';
+        });
+    });
+
+})
+.catch(err => {
+    console.error(err);
+    document.getElementById('highways').textContent =
+        'Error loading scan_summary.json';
+});
+</script>
+
+</body>
+</html>

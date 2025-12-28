@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clone Hero Viewer - Color Profiles</title>
+	<h2>Navigation</h2>
+<ul>
+    <li><a href="index.html">Index</a></li>
+    <li><a href="highways.html">Highways</a></li>
+</ul>	
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { margin-bottom: 10px; }
+        #highways, #colorProfiles { display: flex; flex-wrap: wrap; gap: 10px; }
+        .thumbnail { display: inline-block; text-align: center; width: 150px; }
+        .thumbnail img { width: 150px; height: 150px; object-fit: contain; display: block; margin-bottom: 5px; }
+        details { margin-bottom: 10px; }
+        .swatch-container { display: flex; gap: 5px; margin-top: 5px; }
+        .swatch { width: 50px; height: 50px; border: 1px solid black; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Clone Hero Viewer</h1>
+    <p id="scanMode">Loading scan mode…</p>
+
+    <h2>Highways</h2>
+    <div id="highways"></div>
+
+    <h2>Color Profiles</h2>
+    <div id="colorProfiles"></div>
+
+    <script>
+        fetch('scan_summary.json')
+        .then(response => response.json())
+        .then(data => {
+            // Scan mode
+            document.getElementById('scanMode').textContent = `Scan Mode: ${data.scan_mode || "Unknown"}`;
+
+            // Color Profiles
+            const profilesContainer = document.getElementById('colorProfiles');
+            if(data.color_profiles_data) {
+                data.color_profiles_data.forEach(profile => {
+                    const section = document.createElement('details');
+                    section.open = true; // collapsed by default
+
+                    const summary = document.createElement('summary');
+                    summary.textContent = profile.filename;
+                    section.appendChild(summary);
+
+                    const swatchContainer = document.createElement('div');
+                    swatchContainer.className = 'swatch-container';
+
+                    ['note_green','note_red','note_yellow','note_blue','note_orange','note_sp_active','note_open'].forEach(field => {
+                        const swatch = document.createElement('div');
+                        swatch.className = 'swatch';
+                        const value = profile[field];
+                        if(value) {
+                            swatch.style.backgroundColor = value;
+                        } else {
+                            swatch.textContent = 'X';
+                        }
+                        swatchContainer.appendChild(swatch);
+                    });
+
+                    section.appendChild(swatchContainer);
+                    profilesContainer.appendChild(section);
+                });
+            }
+        })
+        .catch(error => console.error('Error loading scan_summary.json:', error));
+    </script>
+</body>
+</html>

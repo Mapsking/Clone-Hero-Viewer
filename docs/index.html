@@ -3,91 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Clone Hero Viewer</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        .thumbnail { display: inline-block; margin: 5px; text-align: center; }
-        img { max-width: 150px; max-height: 150px; display: block; margin-bottom: 5px; }
-        details { margin-bottom: 10px; }
-        summary { cursor: pointer; font-weight: bold; }
-    </style>
+    <!-- Link to shared theme CSS -->
+    <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-    <h1>Clone Hero Viewer</h1>
-    <p id="scanMode">Loading scan mode…</p>
 
-    <h2>Highways</h2>
-    <div id="highways"></div>
+<h1>Clone Hero Viewer - Home</h1>
 
-    <h2>Color Profiles</h2>
-    <div id="colorProfiles"></div>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="color_profiles.html">Color Profiles</a>
+    <a href="highways.html">Highways</a>
+    <a href="Image_bgs.html">Image Backgrounds</a>
+    <a href="Video_bgs.html">Video Backgrounds</a>
+    <a href="Video_highways.html">Video Highways</a>
+</nav>
 
-    <script>
-    fetch('scan_summary.json')
-    .then(response => response.json())
-    .then(data => {
-        // Show scan mode
-        const scanMode = document.getElementById('scanMode');
-        scanMode.textContent = `Scan Mode: ${data.scan_mode || "Unknown"}`;
+<p id="scanMode">Loading scan mode…</p>
 
-        // Display thumbnails
-        const container = document.getElementById('highways');
-        data.thumbnails.forEach(item => {
-            const div = document.createElement('div');
-            div.className = 'thumbnail';
+<div id="mainContent">
+    <!-- These sections will be filled by their own pages later -->
+    <div id="highwaysSection"></div>
+    <div id="colorProfilesSection"></div>
+</div>
 
-            const img = document.createElement('img');
-            img.src = './' + item.thumbnail;
-            div.appendChild(img);
+<script>
+fetch('scan_summary.json')
+.then(response => response.json())
+.then(data => {
+    document.getElementById('scanMode').textContent =
+        `Scan Mode: ${data.scan_mode || "Unknown"}`;
+})
+.catch(error => console.error('Error loading JSON:', error));
+</script>
 
-            const caption = document.createElement('div');
-            caption.textContent = item.file;
-            div.appendChild(caption);
-
-            container.appendChild(div);
-        });
-
-        // Display color profiles
-        const profilesContainer = document.getElementById('colorProfiles');
-        data.color_profiles_data.forEach(profile => {
-            const section = document.createElement('details');
-            section.open = false;  // collapsed by default
-
-            const summary = document.createElement('summary');
-            summary.textContent = profile.filename.replace('.ini',''); // remove extension
-            section.appendChild(summary);
-
-            const swatchContainer = document.createElement('div');
-            swatchContainer.style.display = 'flex';
-            swatchContainer.style.gap = '5px';
-            swatchContainer.style.marginTop = '5px';
-
-            // Fields in order: G, R, Y, B, O, SP, Open
-            ['note_green','note_red','note_yellow','note_blue','note_orange','note_sp_active','note_open'].forEach(field => {
-                const swatch = document.createElement('div');
-                swatch.style.width = '50px';
-                swatch.style.height = '50px';
-                swatch.style.border = '1px solid black';
-                swatch.style.display = 'flex';
-                swatch.style.alignItems = 'center';
-                swatch.style.justifyContent = 'center';
-                swatch.style.fontSize = '20px';
-
-                const value = profile[field];
-                if(value) {
-                    swatch.style.backgroundColor = value;
-                } else {
-                    swatch.textContent = 'X'; // empty field
-                }
-
-                swatchContainer.appendChild(swatch);
-            });
-
-            section.appendChild(swatchContainer);
-            profilesContainer.appendChild(section);
-        });
-
-    })
-    .catch(error => console.error('Error loading JSON:', error));
-    </script>
 </body>
 </html>

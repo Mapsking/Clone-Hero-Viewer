@@ -1,0 +1,172 @@
+/* ===============================
+   Theme: Clone Hero Viewer
+   Colors, buttons, nav bar, slider
+   Future-proof, consistent across pages
+   =============================== */
+
+/* -------------------------
+   Core Colors & Variables
+   ------------------------- */
+:root {
+    /* Purples */
+    --primary-purple: #281953;      /* main dark purple (nav, borders) */
+    --secondary-purple: #3a2a73;    /* hover / secondary elements */
+    --accent-purple: #24164a;       /* slider track */
+
+    /* Text Colors */
+    --text-primary: #e9e9f2;        /* general text */
+    --text-muted: #c4c4d4;          /* captions, minor text */
+
+    /* Buttons */
+    --download-bg: #351C75;
+    --download-text: #C9C3E6;
+
+    /* Layout */
+    --grid-gap: 10px;
+}
+
+/* -------------------------
+   Body
+   ------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f8f8;
+    color: var(--text-primary);
+}
+
+/* -------------------------
+   Navigation Bar
+   ------------------------- */
+nav {
+    margin-bottom: 20px;
+    background-color: var(--primary-purple);
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* optional if nav grows */
+}
+
+nav a {
+    color: #e6e6f0;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover {
+    background-color: var(--secondary-purple);
+}
+
+/* -------------------------
+   Headings
+   ------------------------- */
+h1, h2, h3 {
+    color: #3f2f82; /* brighter purple but cool */
+}
+
+/* -------------------------
+   Controls / Slider
+   ------------------------- */
+#controls {
+    margin-bottom: 20px;
+    color: var(--text-muted);
+}
+
+#thumbSizeValue {
+    font-weight: bold;
+    margin-left: 5px;
+    color: var(--text-muted);
+}
+
+/* Slider */
+input[type=range] {
+    -webkit-appearance: none;
+    width: 220px;
+    height: 8px;
+    background: var(--accent-purple);
+    border-radius: 4px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border: 2px solid var(--primary-purple);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border: 2px solid var(--primary-purple);
+    border-radius: 50%;
+}
+
+/* -------------------------
+   Grid / Thumbnails
+   ------------------------- */
+#highways {
+    display: grid;
+    column-gap: var(--grid-gap);
+    row-gap: 12px;
+}
+
+.thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.thumbnail-box {
+    position: relative;
+    border: 2px solid var(--primary-purple);
+    background-image: repeating-conic-gradient(#ccc 0% 25%, #eee 0% 50%);
+    background-size: 20px 20px;
+    overflow: hidden;
+}
+
+.thumbnail-box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail-caption {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    color: var(--text-muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* -------------------------
+   Buttons
+   ------------------------- */
+button.download-btn {
+    margin-top: auto;
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: var(--download-bg);
+    color: var(--download-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.download-btn:hover {
+    background-color: var(--secondary-purple);
+}
