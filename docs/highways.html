@@ -4,28 +4,92 @@
 <meta charset="UTF-8">
 <title>Clone Hero Viewer - Highways</title>
 
-<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="nav_bar.css">
 <link rel="stylesheet" href="index_bar.css">
+
+<style>
+html, body {
+    overflow-x: hidden;  /* prevent horizontal scrolling */
+}
+
+.thumbnail-caption {
+    word-break: break-word;
+    display: block;
+    overflow: visible;      /* allow full content */
+    white-space: normal;    /* allow wrapping */
+    text-overflow: clip;    /* prevent ellipsis */
+}
+
+/* Purple tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: max-content;
+    max-width: 250px;
+    background-color: rgba(75,0,130,0.85);  /* deep purple */
+    border: 1px solid #9370DB;               /* lighter purple border */
+    color: #fff;
+    text-align: left;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 1.3;
+    position: absolute;
+    z-index: 10;
+    bottom: 105%;           /* above thumbnail */
+    left: 50%;
+    transform: translateX(-50%) translateY(-5px); /* small gap */
+    opacity: 0;
+    pointer-events: none;
+    white-space: pre-line;
+    transition: opacity 0.3s 0.5s;  /* fade in with delay */
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.thumbnail::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(calc(-50% + var(--tooltip-shift-x, 0px)));
+    background: var(--accent-purple);          /* matches sidebar accent purple */
+    color: #7b67ee;                             /* neutral gray text for DR on/off */
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 2px solid var(--primary-purple);   /* thicker border matches sidebar */
+    font-size: 14px;
+    line-height: 1.3;
+    white-space: pre;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease-in-out;
+    z-index: 20;
+}
+
+.thumbnail:hover::after {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h1 id="page-title">Clone Hero Viewer - Highways</h1>
-
-<div class="top-info">
-  <span id="scan-mode">Scan mode: <strong></strong></span>
-</div>
-
-<script>
-fetch('docs/scan_summary.json')
-  .then(res => res.json())
-  .then(data => {
-    const count = data.highways.length;
-    document.getElementById('page-title').textContent =
-      `Clone Hero Viewer - Highways (${count})`;
-  })
-  .catch(err => console.error('Error loading scan_summary.json:', err));
-</script>
+<h1>Clone Hero Viewer - Highways <span id="highway-count"></span></h1>
 
 <nav>
     <a href="index.html">Home</a>
@@ -34,6 +98,10 @@ fetch('docs/scan_summary.json')
     <a href="Image_bgs.html">Image Backgrounds</a>
     <a href="Video_bgs.html">Video Backgrounds</a>
     <a href="Video_highways.html">Video Highways</a>
+	<div class="top-info">
+	  <span id="scan-mode">Scan mode: <strong></strong></span>
+	  <span id="highway-count"></span>
+	</div>
 </nav>
 
 <!-- Sidebar -->
@@ -54,7 +122,7 @@ fetch('docs/scan_summary.json')
 
 </div>
 
-<div id="highways"></div>
+<div id="highways" style="padding-bottom: 45px;"></div>
 
 <script>
 const slider = document.getElementById('thumbSizeSlider');
@@ -117,6 +185,7 @@ fetch('scan_summary.json')
         card.className = 'thumbnail';
         card.dataset.filename = item.file.toUpperCase();
 
+        // Add class for transparent PNGs
         if (item.transparent) {
             card.classList.add('transparent');
         }
@@ -129,8 +198,23 @@ fetch('scan_summary.json')
         box.appendChild(img);
 
         const caption = document.createElement('div');
-        caption.className = 'thumbnail-caption';
-        caption.textContent = item.file.replace(/\.[^/.]+$/, '');
+		caption.className = 'thumbnail-caption';
+		caption.textContent = item.file.replace(/\.[^/.]+$/, '');
+
+		// Step 1: Add tooltip showing filename + file type
+		const fileType = item.file.split('.').pop().toUpperCase();
+		const fileName = item.file.replace(/\.[^/.]+$/, ''); // remove extension
+		const fileSizeKB = (item.size / 1024); // assuming item.size is in bytes
+		const fileSizeText = fileSizeKB.toLocaleString('en-US', {minimumFractionDigits: 1, maximumFractionDigits: 1}); 
+		card.setAttribute(
+  'data-tooltip',
+  `File: ${fileName}
+File Type: ${fileType}
+File Size: ${fileSizeText} KB
+Resolution: ${item.width}x${item.height}
+Transparency: ${item.transparent ? 'Yes' : 'No'}`
+);
+
 
         const btn = document.createElement('button');
         btn.className = 'download-btn';
@@ -143,9 +227,47 @@ fetch('scan_summary.json')
         };
 
         card.append(box, caption, btn);
-        container.appendChild(card);
-    });
+		container.appendChild(card);
+		// Tooltip edge correction
+		card.addEventListener('mouseenter', () => {
+			const tooltipText = card.getAttribute('data-tooltip');
+			if (!tooltipText) return;
 
+			// Create a temporary measurement tooltip
+			const temp = document.createElement('div');
+			temp.textContent = tooltipText;
+			temp.style.position = 'fixed';
+			temp.style.visibility = 'hidden';
+			temp.style.whiteSpace = 'pre';
+			temp.style.fontSize = '14px';
+			temp.style.padding = '6px 10px';
+			document.body.appendChild(temp);
+
+			const rect = card.getBoundingClientRect();
+			const tooltipWidth = temp.offsetWidth;
+			const viewportWidth = window.innerWidth;
+
+			let shift = 0;
+			const tooltipLeft = rect.left + rect.width / 2 - tooltipWidth / 2;
+			const tooltipRight = tooltipLeft + tooltipWidth;
+
+			if (tooltipLeft < 8) {
+				shift = (12 - tooltipLeft);
+			} else if (tooltipRight > viewportWidth - 8) {
+				shift = (viewportWidth - 12 - tooltipRight);
+			}
+
+			card.style.setProperty('--tooltip-shift-x', `${shift}px`);
+			document.body.removeChild(temp);
+		});
+
+		card.addEventListener('mouseleave', () => {
+			card.style.removeProperty('--tooltip-shift-x');
+		});
+
+	});
+
+    /* ===== Thumbnail sizing ===== */
     function updateThumbnailSizes() {
         const columns = columnSteps[columnSteps.length - 1 - slider.value];
         const gap = 10;
@@ -169,6 +291,7 @@ fetch('scan_summary.json')
     slider.addEventListener('input', updateThumbnailSizes);
     window.addEventListener('resize', updateThumbnailSizes);
 
+    /* ===== Sidebar navigation ===== */
     topRow.querySelectorAll('.indexButton').forEach(btn => {
         btn.addEventListener('click', () => {
             const targetLetter = btn.dataset.letter;
@@ -187,10 +310,31 @@ fetch('scan_summary.json')
 
             if (found) {
                 found.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                const box = found.querySelector('.thumbnail-box');
+                box.classList.remove('flash');
+                void box.offsetWidth;
+                box.classList.add('flash');
+                setTimeout(() => {
+                    box.classList.remove('flash');
+                }, 2500);
+
+            } else {
+                // Only apply shake/red to letter buttons, not up arrow
+                if (btn.dataset.letter) {
+                    btn.classList.remove('shake');
+                    void btn.offsetWidth;
+                    btn.classList.add('shake', 'red');
+                    setTimeout(() => {
+                        btn.classList.remove('shake', 'red');
+                    }, 1000);
+                }
             }
+
         });
     });
 
+    /* ===== Search ===== */
     const searchInput = document.getElementById('indexSearch');
     searchInput.addEventListener('input', () => {
         const query = searchInput.value.toUpperCase();
@@ -206,6 +350,24 @@ fetch('scan_summary.json')
     document.getElementById('highways').textContent =
         'Error loading scan_summary.json';
 });
+</script>
+
+<script>
+fetch('scan_summary.json')
+    .then(res => res.json())
+    .then(data => {
+        const count = data.thumbnails.length; // number of highways
+        document.getElementById('highway-count').innerText = `(${count.toLocaleString('en-US')})`;
+		let scanModeText = 'Unknown';
+
+		if (data.scan_mode === 'T') scanModeText = 'Test';
+		else if (data.scan_mode === 'A') scanModeText = 'Actual';
+		else if (data.scan_mode === 'B') scanModeText = 'Both';
+
+		document.querySelector('#scan-mode strong').innerText = scanModeText;
+
+    })
+    .catch(err => console.error('Error loading scan_summary.json:', err));
 </script>
 
 </body>

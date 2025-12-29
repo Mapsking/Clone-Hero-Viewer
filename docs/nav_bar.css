@@ -69,48 +69,6 @@ h1, h2, h3 {
 }
 
 /* -------------------------
-   Controls / Slider
-   ------------------------- */
-#controls {
-    margin-bottom: 20px;
-    color: var(--text-muted);
-}
-
-#thumbSizeValue {
-    font-weight: bold;
-    margin-left: 5px;
-    color: var(--text-muted);
-}
-
-/* Slider */
-input[type=range] {
-    -webkit-appearance: none;
-    width: 220px;
-    height: 8px;
-    background: var(--accent-purple);
-    border-radius: 4px;
-}
-
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 18px;
-    height: 18px;
-    background: #ffffff;
-    border: 2px solid var(--primary-purple);
-    border-radius: 50%;
-    cursor: pointer;
-    margin-top: -5px;
-}
-
-input[type=range]::-moz-range-thumb {
-    width: 18px;
-    height: 18px;
-    background: #ffffff;
-    border: 2px solid var(--primary-purple);
-    border-radius: 50%;
-}
-
-/* -------------------------
    Grid / Thumbnails
    ------------------------- */
 #highways {
@@ -151,6 +109,13 @@ input[type=range]::-moz-range-thumb {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.top-info {
+    margin-left: auto;      /* pushes it to the far right */
+    display: flex;          /* keeps scan mode and count inline */
+    align-items: center;    /* vertically centers them */
+    gap: 8px;               /* spacing between scan mode and count */
 }
 
 /* -------------------------
