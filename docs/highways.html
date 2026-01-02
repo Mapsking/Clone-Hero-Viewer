@@ -217,23 +217,15 @@ fetch('scan_summary.json')
 		const btn = document.createElement('button');
 		btn.className = 'download-btn';
 		btn.textContent = 'Download';
-		btn.addEventListener('click', async () => {
-			try {
-				const response = await fetch(`https://pub-e51c5afbba664a45ac4c4795c2758200.r2.dev/Highways/${item.file}`);
-				if (!response.ok) throw new Error('Network response was not ok');
-				const blob = await response.blob();
-				const url = URL.createObjectURL(blob);
-
-				const a = document.createElement('a');
-				a.href = url;
-				a.download = item.file;
-				a.click();
-
-				URL.revokeObjectURL(url);  // clean up memory
-			} catch (err) {
-				console.error('Download failed:', err);
-				alert('Download failed. See console for details.');
-			}
+		btn.addEventListener('click', () => {
+			const a = document.createElement('a');
+			a.href =
+				"https://ch.mapsking.us/Highways/" +
+				encodeURIComponent(item.file);
+			a.download = item.file;
+			document.body.appendChild(a);
+			a.click();
+			document.body.removeChild(a);
 		});
 
         card.append(box, caption, btn);
