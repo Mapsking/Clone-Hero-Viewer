@@ -43,6 +43,11 @@
     box-sizing: border-box;
 }
 
+/* Click acknowledgement: glyph-only, click-only */
+#topRow .indexButton:active {
+    transform: translateY(1px);
+}
+
 /* ===== Shake animation for letters with no matches ===== */
 @keyframes shake {
     0%   { transform: translateX(0) scale(1); }
@@ -154,6 +159,16 @@
 #indexSidebar .indexButton.topButton:hover {
     color: var(--accent-purple);
     text-decoration: none;
+}
+
+/* ===== Top arrow base + hover, matching letters exactly ===== */
+#indexSidebar .indexButton.topButton {
+    color: #bfbfbf; /* same as letters base */
+}
+
+#indexSidebar .indexButton.topButton:hover {
+    color: #7B68EE; /* same as letters hover */
+    text-decoration: underline; /* matches letters */
 }
 
 /* Flash red border animation for thumbnails */

@@ -59,18 +59,43 @@
 <nav>
     <a href="index.html">Home</a>
     <a href="color_profiles.html">Color Profiles</a>
-    <a href="highways.html">Highways</a>
+	<a href="game_icons.html">Game Icons</a>
+	<a href="highways.html">Highways</a>
     <a href="Image_bgs.html">Image Backgrounds</a>
     <a href="Video_bgs.html">Video Backgrounds</a>
     <a href="Video_highways.html">Video Highways</a>
+	<div id="instrumentFilterContainer" style="
+		margin-left: auto; 
+		display: flex; 
+		align-items: center; 
+		gap: 12px;
+		padding: 4px 8px; 
+		background-color: var(--secondary-purple);
+		border-radius: 6px;
+	">
+		<fieldset id="instrumentFilter" style="display:flex; gap:8px; border:none; margin:0; padding:0;">
+			<legend style="display:none;">Instrument Filter (not functional yet)</legend>
+			<label style="color:#e6e6f0; cursor:pointer;">
+				<input type="radio" name="instrument" value="all" checked style="margin-right:4px;">
+				All
+			</label>
+			<label style="color:#e6e6f0; cursor:pointer;">
+				<input type="radio" name="instrument" value="guitar" style="margin-right:4px;">
+				Guitar
+			</label>
+			<label style="color:#e6e6f0; cursor:pointer;">
+				<input type="radio" name="instrument" value="drums" style="margin-right:4px;">
+				Drums
+			</label>
+		</fieldset>
+	</div>
+
+	<div class="top-info">
+		<span id="scan-mode">Scan mode: <strong></strong></span>
+	</div>
+	
 </nav>
 
-<p id="scanMode">Loading scan mode…</p>
-
-<h2>Highways</h2>
-<div id="highways"></div>
-
-<h2>Color Profiles</h2>
 <div id="colorProfiles"></div>
 
 <script>
@@ -78,8 +103,12 @@ fetch('scan_summary.json')
 .then(response => response.json())
 .then(data => {
     // Display scan mode
-    document.getElementById('scanMode').textContent =
-        `Scan Mode: ${data.scan_mode || "Unknown"}`;
+    let scanModeText = 'Unknown';
+	if (data.scan_mode === 'T') scanModeText = 'Test';
+	else if (data.scan_mode === 'A') scanModeText = 'Actual';
+	else if (data.scan_mode === 'B') scanModeText = 'Both';
+
+	document.querySelector('#scan-mode strong').innerText = scanModeText;
 
     // Populate Color Profiles
     const profilesContainer = document.getElementById('colorProfiles');

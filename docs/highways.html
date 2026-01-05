@@ -85,6 +85,11 @@ html, body {
     background-size: 50% 50%;
 }
 
+/* ===== Custom purple radio buttons ===== */
+#transparencyFilter input[type="radio"] {
+    accent-color: #7B68EE; /* medium purple, matches theme */
+}
+
 </style>
 
 </head>
@@ -96,10 +101,37 @@ html, body {
 <nav>
     <a href="index.html">Home</a>
     <a href="color_profiles.html">Color Profiles</a>
-    <a href="highways.html">Highways</a>
+    <a href="game_icons.html">Game Icons</a>
+	<a href="highways.html">Highways</a>
     <a href="Image_bgs.html">Image Backgrounds</a>
     <a href="Video_bgs.html">Video Backgrounds</a>
     <a href="Video_highways.html">Video Highways</a>
+	<div id="transparencyFilterContainer" style="
+    margin-left: auto; 
+    display: flex; 
+    align-items: center; 
+    gap: 12px;
+    padding: 4px 8px; 
+    background-color: var(--secondary-purple);
+    border-radius: 6px;
+">
+    <fieldset id="transparencyFilter" style="display:flex; gap:8px; border:none; margin:0; padding:0;">
+        <legend style="display:none;">Transparency Filter</legend>
+        <label style="color:#e6e6f0; cursor:pointer;">
+            <input type="radio" name="filter" value="all" checked style="margin-right:4px;">
+            All
+        </label>
+        <label style="color:#e6e6f0; cursor:pointer;">
+            <input type="radio" name="filter" value="opaque" style="margin-right:4px;">
+            Opaque
+        </label>
+        <label style="color:#e6e6f0; cursor:pointer;">
+            <input type="radio" name="filter" value="transparent" style="margin-right:4px;">
+            Transparent
+        </label>
+    </fieldset>
+</div>
+
 	<div class="top-info">
 	  <span id="scan-mode">Scan mode: <strong></strong></span>
 	  <span id="highway-count"></span>
@@ -217,15 +249,27 @@ fetch('scan_summary.json')
 		const btn = document.createElement('button');
 		btn.className = 'download-btn';
 		btn.textContent = 'Download';
-		btn.addEventListener('click', () => {
-			const a = document.createElement('a');
-			a.href =
-				"https://ch.mapsking.us/Highways/" +
-				encodeURIComponent(item.file);
-			a.download = item.file;
-			document.body.appendChild(a);
-			a.click();
-			document.body.removeChild(a);
+		btn.addEventListener('click', async () => {
+			try {
+				const response = await fetch(
+					"https://ch.mapsking.us/Highways/" + encodeURIComponent(item.file),
+					{ mode: 'no-cors' } // force download without CORS check
+				);
+				const blob = await response.blob();
+				const url = URL.createObjectURL(blob);
+
+				const a = document.createElement('a');
+				a.href = url;
+				a.download = item.file;
+				document.body.appendChild(a);
+				a.click();
+				document.body.removeChild(a);
+
+				URL.revokeObjectURL(url); // free memory
+			} catch (err) {
+				console.error('Download failed:', err);
+				alert('Download failed. Check console for details.');
+			}
 		});
 
         card.append(box, caption, btn);
@@ -331,47 +375,56 @@ fetch('scan_summary.json')
     window.addEventListener('resize', updateThumbnailSizes);
 
     /* ===== Sidebar navigation ===== */
-    topRow.querySelectorAll('.indexButton').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const targetLetter = btn.dataset.letter;
-            let found = null;
+  	topRow.querySelectorAll('.indexButton').forEach(btn => {
+		btn.addEventListener('click', () => {
+			const targetLetter = btn.dataset.letter;
+			let found = null;
 
-            const thumbs = container.querySelectorAll('.thumbnail');
-            thumbs.forEach(t => {
-                const firstChar = t.dataset.filename[0];
-                if (
-                    targetLetter === '0-9' && /\d/.test(firstChar) && !found ||
-                    firstChar === targetLetter && !found
-                ) {
-                    found = t;
-                }
-            });
+			// Clear active state from all index buttons
+			topRow.querySelectorAll('.indexButton').forEach(b =>
+				b.classList.remove('active')
+			);
 
-            if (found) {
-                found.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			const thumbs = container.querySelectorAll('.thumbnail');
+			thumbs.forEach(t => {
+				const firstChar = t.dataset.filename[0];
+				if (
+					targetLetter === '0-9' && /\d/.test(firstChar) && !found ||
+					firstChar === targetLetter && !found
+				) {
+					found = t;
+				}
+			});
 
-                const box = found.querySelector('.thumbnail-box');
-                box.classList.remove('flash');
-                void box.offsetWidth;
-                box.classList.add('flash');
-                setTimeout(() => {
-                    box.classList.remove('flash');
-                }, 2500);
+			if (found) {
+				// Mark button as active (pressed feedback)
+				btn.classList.add('active');
+				setTimeout(() => btn.classList.remove('active'), 1200);
 
-            } else {
-                // Only apply shake/red to letter buttons, not up arrow
-                if (btn.dataset.letter) {
-                    btn.classList.remove('shake');
-                    void btn.offsetWidth;
-                    btn.classList.add('shake', 'red');
-                    setTimeout(() => {
-                        btn.classList.remove('shake', 'red');
-                    }, 1000);
-                }
-            }
+				found.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-        });
-    });
+				const box = found.querySelector('.thumbnail-box');
+				box.classList.remove('flash');
+				void box.offsetWidth;
+				box.classList.add('flash');
+				setTimeout(() => {
+					box.classList.remove('flash');
+				}, 2500);
+
+			} else {
+				// Only apply shake/red to letter buttons, not up arrow
+				if (btn.dataset.letter) {
+					btn.classList.remove('shake');
+					void btn.offsetWidth;
+					btn.classList.add('shake', 'red');
+					setTimeout(() => {
+						btn.classList.remove('shake', 'red');
+					}, 1000);
+				}
+			}
+		});
+	});
+
 
     /* ===== Search ===== */
     const searchInput = document.getElementById('indexSearch');
@@ -397,37 +450,54 @@ searchInput.addEventListener('keydown', (e) => {
     document.getElementById('highways').textContent =
         'Error loading scan_summary.json';
 });
+
+// ===== Transparency filter functionality + dynamic count =====
+const filterRadios = document.querySelectorAll('#transparencyFilter input[name="filter"]');
+const highwayCountSpan = document.getElementById('highway-count');
+const container = document.getElementById('highways');
+
+function updateHighwayCount() {
+    const visibleCount = container.querySelectorAll('.thumbnail:not([style*="display: none"])').length;
+    highwayCountSpan.textContent = `(${visibleCount.toLocaleString('en-US')})`;
+}
+
+// Initial count
+updateHighwayCount();
+
+filterRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+        const value = radio.value;
+        container.querySelectorAll('.thumbnail').forEach(t => {
+            const isTransparent = t.classList.contains('transparent');
+            if (value === 'all') t.style.display = '';
+            else if (value === 'opaque') t.style.display = isTransparent ? 'none' : '';
+            else if (value === 'transparent') t.style.display = isTransparent ? '' : 'none';
+        });
+        updateHighwayCount();
+    });
+});
+
 </script>
 
 <script>
+// Only update scan mode on initial page load
 fetch('scan_summary.json')
     .then(res => res.json())
     .then(data => {
-        const count = data.thumbnails.length; // number of highways
-        document.getElementById('highway-count').innerText = `(${count.toLocaleString('en-US')})`;
-		let scanModeText = 'Unknown';
+        // Update highway count
+        const visibleCount = document.querySelectorAll('#highways .thumbnail').length;
+        document.getElementById('highway-count').innerText = `(${visibleCount.toLocaleString('en-US')})`;
 
-		if (data.scan_mode === 'T') scanModeText = 'Test';
-		else if (data.scan_mode === 'A') scanModeText = 'Actual';
-		else if (data.scan_mode === 'B') scanModeText = 'Both';
+        // Update scan mode display
+        let scanModeText = 'Unknown';
+        if (data.scan_mode === 'T') scanModeText = 'Test';
+        else if (data.scan_mode === 'A') scanModeText = 'Actual';
+        else if (data.scan_mode === 'B') scanModeText = 'Both';
 
-		document.querySelector('#scan-mode strong').innerText = scanModeText;
-
+        document.querySelector('#scan-mode strong').innerText = scanModeText;
     })
     .catch(err => console.error('Error loading scan_summary.json:', err));
 
-  // … your existing code …
-
-  const searchInput = document.getElementById('indexSearch');
-
-  // CTRL+F override
-  document.addEventListener('keydown', (e) => {
-      if (e.ctrlKey && e.key === 'f') {
-          e.preventDefault();            // stop browser default
-          searchInput.focus();           // move focus to your search box
-          searchInput.select();          // optionally select the text
-      }
-  });
 </script>
 </body>
 </html>

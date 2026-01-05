@@ -31,9 +31,14 @@
 fetch('scan_summary.json')
 .then(response => response.json())
 .then(data => {
-    document.getElementById('scanMode').textContent =
-        `Scan Mode: ${data.scan_mode || "Unknown"}`;
+    let scanModeText = 'Unknown';
+	if (data.scan_mode === 'T') scanModeText = 'Test';
+	else if (data.scan_mode === 'A') scanModeText = 'Actual';
+	else if (data.scan_mode === 'B') scanModeText = 'Both';
+
+	document.getElementById('scanMode').textContent = `Scan Mode: ${scanModeText}`;
 })
+
 .catch(error => console.error('Error loading JSON:', error));
 </script>
 
