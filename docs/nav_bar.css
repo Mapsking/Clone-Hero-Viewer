@@ -45,7 +45,8 @@ nav {
     border-radius: 8px;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* optional if nav grows */
+    flex-wrap: nowrap; /* optional if nav grows */
+	align-items: center;
 }
 
 nav a {
@@ -61,11 +62,17 @@ nav a:hover {
     background-color: var(--secondary-purple);
 }
 
+nav a.active:hover {
+    background-color: inherit; /* keeps the active page from showing hover box */
+    cursor: default;           /* optional: keeps pointer from changing */
+}
+
 /* -------------------------
    Headings
    ------------------------- */
 h1, h2, h3 {
     color: #3f2f82; /* brighter purple but cool */
+    margin-top: 0;   /* removes extra gap at top of page */
 }
 
 /* -------------------------
@@ -139,4 +146,84 @@ button.download-btn:hover {
 /* Purple radio buttons for Color Profiles filter */
 #instrumentFilter input[type="radio"] {
     accent-color: #7B68EE; /* medium purple to match Highways */
+}
+
+/* ===== Active page glowing underline, works with Dark Reader ===== */
+nav a.active {
+    position: relative;       /* ensures ::after positions relative to link */
+    color: #7B68EE;           /* text stays visible */
+}
+
+/* ===== Active page glowing underline, DR-proof ===== */
+nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;              /* underline thickness */
+    background-color: #6c3dcc; /* neon bright purple-pink */
+    box-shadow: 0 0 6px #6c3dcc, 0 0 12px #6c3dcc;
+    pointer-events: none;
+}
+
+/* Dark mode / Dark Reader override */
+@media (prefers-color-scheme: dark) {
+    nav a.active::after {
+        background-color: #6c3dcc; /* same bright color for visibility */
+        box-shadow: 0 0 6px #6c3dcc, 0 0 12px #6c3dcc;
+    }
+}
+
+/* ===============================
+   Color Profiles – Grid & Cards
+   =============================== */
+
+/* Grid container */
+#profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 20px; /* adjust this so it clears your fixed header/nav */
+}
+
+/* Individual profile card */
+.profile-card {
+    background-color: #2a2c2e; /* neutral, DR-friendly */
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Profile name */
+.profile-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e6e6f0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Swatch row */
+.profile-swatches {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+}
+
+/* Individual swatch */
+.profile-swatch {
+    height: 18px;
+    border-radius: 4px;
+}
+
+#top-container {
+    position: fixed;
+    top: 28px;
+    left: 28px;
+    right: 28px;
+    z-index: 1000;
 }

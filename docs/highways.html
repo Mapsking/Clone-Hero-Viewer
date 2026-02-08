@@ -102,7 +102,7 @@ html, body {
     <a href="index.html">Home</a>
     <a href="color_profiles.html">Color Profiles</a>
     <a href="game_icons.html">Game Icons</a>
-	<a href="highways.html">Highways</a>
+	<a href="highways.html" class="active">Highways</a>
     <a href="Image_bgs.html">Image Backgrounds</a>
     <a href="Video_bgs.html">Video Backgrounds</a>
     <a href="Video_highways.html">Video Highways</a>
@@ -436,10 +436,17 @@ fetch('scan_summary.json')
     });
 });
 
+// ===== Apply initial transparency filter immediately =====
+const selectedFilter = document.querySelector('#transparencyFilter input[name="filter"]:checked');
+if (selectedFilter) {
+    selectedFilter.dispatchEvent(new Event('change'));
+}
+
 // Clear search on ESC key instantly
 searchInput.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         searchInput.value = '';
+        searchInput.blur(); // remove focus from search bar
         container.querySelectorAll('.thumbnail').forEach(t => t.style.display = '');
     }
 });
@@ -461,9 +468,6 @@ function updateHighwayCount() {
     highwayCountSpan.textContent = `(${visibleCount.toLocaleString('en-US')})`;
 }
 
-// Initial count
-updateHighwayCount();
-
 filterRadios.forEach(radio => {
     radio.addEventListener('change', () => {
         const value = radio.value;
@@ -480,23 +484,32 @@ filterRadios.forEach(radio => {
 </script>
 
 <script>
-// Only update scan mode on initial page load
+// Only fetch once at page load, no redundant requests
+let scanData = null;
+
 fetch('scan_summary.json')
-    .then(res => res.json())
-    .then(data => {
-        // Update highway count
-        const visibleCount = document.querySelectorAll('#highways .thumbnail').length;
-        document.getElementById('highway-count').innerText = `(${visibleCount.toLocaleString('en-US')})`;
+.then(res => res.json())
+.then(data => {
+    scanData = data;
 
-        // Update scan mode display
-        let scanModeText = 'Unknown';
-        if (data.scan_mode === 'T') scanModeText = 'Test';
-        else if (data.scan_mode === 'A') scanModeText = 'Actual';
-        else if (data.scan_mode === 'B') scanModeText = 'Both';
+    // Update scan mode
+    let scanModeText = 'Unknown';
+    if (data.scan_mode === 'T') scanModeText = 'Test';
+    else if (data.scan_mode === 'A') scanModeText = 'Actual';
+    else if (data.scan_mode === 'B') scanModeText = 'Both';
+    document.querySelector('#scan-mode strong').textContent = scanModeText;
+})
+.catch(err => console.error('Error loading scan_summary.json:', err));
 
-        document.querySelector('#scan-mode strong').innerText = scanModeText;
-    })
-    .catch(err => console.error('Error loading scan_summary.json:', err));
+// ===== CTRL+F focuses the search bar =====
+document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && (e.key === 'f' || e.key === 'F')) {
+        e.preventDefault();          // prevent browser default search
+        const searchInput = document.getElementById('indexSearch');
+        searchInput.focus();
+        searchInput.select();
+    }
+});
 
 </script>
 </body>

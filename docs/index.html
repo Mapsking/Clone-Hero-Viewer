@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Clone Hero Viewer</title>
-    <!-- Link to shared theme CSS -->
     <link rel="stylesheet" href="nav_bar.css">
 </head>
 <body>
@@ -11,35 +10,45 @@
 <h1>Clone Hero Viewer - Home</h1>
 
 <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="color_profiles.html">Color Profiles</a>
+	<a href="game_icons.html">Game Icons</a>
     <a href="highways.html">Highways</a>
-    <a href="Image_bgs.html">Image Backgrounds</a>
-    <a href="Video_bgs.html">Video Backgrounds</a>
-    <a href="Video_highways.html">Video Highways</a>
+    <a href="image_bgs.html">Image Backgrounds</a>
+    <a href="video_bgs.html">Video Backgrounds</a>
+    <a href="video_highways.html">Video Highways</a>
+
+    <div class="top-info">
+        <span id="scan-mode">Scan mode: <strong></strong></span>
+    </div>
+
 </nav>
 
-<p id="scanMode">Loading scan mode…</p>
-
 <div id="mainContent">
-    <!-- These sections will be filled by their own pages later -->
     <div id="highwaysSection"></div>
     <div id="colorProfilesSection"></div>
 </div>
 
 <script>
+let scanData = null;
+
 fetch('scan_summary.json')
-.then(response => response.json())
+.then(res => res.json())
 .then(data => {
+    scanData = data;
+
+    // Update scan mode
     let scanModeText = 'Unknown';
-	if (data.scan_mode === 'T') scanModeText = 'Test';
-	else if (data.scan_mode === 'A') scanModeText = 'Actual';
-	else if (data.scan_mode === 'B') scanModeText = 'Both';
+    if (data.scan_mode === 'T') scanModeText = 'Test';
+    else if (data.scan_mode === 'A') scanModeText = 'Actual';
+    else if (data.scan_mode === 'B') scanModeText = 'Both';
 
-	document.getElementById('scanMode').textContent = `Scan Mode: ${scanModeText}`;
+    document.querySelector('#scan-mode strong').textContent = scanModeText;
+
+    // Optional: you can initialize highwaysSection and colorProfilesSection here if needed
+    // e.g., display summary info
 })
-
-.catch(error => console.error('Error loading JSON:', error));
+.catch(err => console.error('Error loading scan_summary.json:', err));
 </script>
 
 </body>

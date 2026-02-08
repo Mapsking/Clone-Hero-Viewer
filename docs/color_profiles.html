@@ -1,149 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Clone Hero Viewer - Color Profiles</title>
-    <link rel="stylesheet" href="nav_bar.css">
+<meta charset="UTF-8">
 
-    <!-- Minimal CSS to preserve color profiles layout -->
-    <style>
-        /* Swatch container and individual swatches */
-        .swatch-container {
-            display: flex;
-            gap: 5px;
-            margin-top: 5px;
-        }
+<link rel="stylesheet" href="nav_bar.css">
+<link rel="stylesheet" href="index_bar.css">
 
-        .swatch {
-            width: 50px;
-            height: 50px;
-            border: 1px solid var(--secondary-purple);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            color: var(--text-primary);
-        }
+<style>
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-        /* <details> spacing */
-        details {
-            margin-bottom: 10px;
-        }
+/* Main container to offset frozen top */
+#main-container {
+    display: flex;
+    gap: 12px;
+    padding: 20px;
+	margin-top: 130px; /* adjust spacing between top and first grid row */
+}
 
-        /* Thumbnails section (if needed for future highways) */
-        #highways {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+/* Profiles grid */
+#profiles-panel-wrapper {
+    flex: 1;
+    overflow-y: auto;
+    height: calc(100vh - 130px);
 
-        .thumbnail {
-            display: inline-block;
-            text-align: center;
-            width: 150px;
-        }
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 12px;
+}
 
-        .thumbnail img {
-            width: 150px;
-            height: 150px;
-            object-fit: contain;
-            display: block;
-            margin-bottom: 5px;
-        }
-    </style>
+#profiles-panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Individual profile card */
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a2c2e;
+    border-radius: 8px;
+    padding: 8px;
+    transition: transform 0.2s;
+	scroll-snap-align: start;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+/* Profile name above swatches */
+.profile-card .thumbnail-caption {
+    font-weight: bold;
+    color: #e6e6f0;
+    margin-bottom: 6px;
+    text-align: center;
+    white-space: normal;
+	word-break: break-word;
+	overflow: visible;
+	text-overflow: clip;
+}
+
+/* Horizontal swatches */
+.profile-card .thumbnail-box {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    width: 100%;
+    aspect-ratio: 2 / 1; /* horizontal layout */
+    margin-bottom: 6px;
+    transition: transform 0.2s;
+}
+
+.profile-card .thumbnail-box div {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Download button */
+.profile-card .download-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+    background-color: var(--download-bg);
+    color: var(--download-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile-card .download-btn:hover {
+    background-color: var(--secondary-purple);
+}
+
+/* Flash animation for index jumps */
+@keyframes flashBorder {
+    0% { box-shadow: 0 0 0 1px red; }
+    50% { box-shadow: 0 0 0 3px red; }
+    100% { box-shadow: 0 0 0 1px red; }
+}
+.flash {
+    animation: flashBorder 2.5s ease-out;
+}
+
+/* Slider row */
+#sliderRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+/* Keep #indexSidebar exactly as before */
+#indexSidebar {
+    flex: 0 0 auto;
+}
+
+/* Right panel for single profile view */
+#detail-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.detail-view {
+    display: flex;
+    gap: 8px;
+}
+
+.detail-view .swatch {
+    width: 60px;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+/* Center nav elements if needed */
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
 </head>
+
 <body>
 
-<h1>Clone Hero Viewer - Color Profiles</h1>
+<div id="top-container">
+    <h1>
+        Clone Hero Viewer - Color Profiles
+        <span id="profile-count-title"></span>
+    </h1>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="color_profiles.html">Color Profiles</a>
-	<a href="game_icons.html">Game Icons</a>
-	<a href="highways.html">Highways</a>
-    <a href="Image_bgs.html">Image Backgrounds</a>
-    <a href="Video_bgs.html">Video Backgrounds</a>
-    <a href="Video_highways.html">Video Highways</a>
-	<div id="instrumentFilterContainer" style="
-		margin-left: auto; 
-		display: flex; 
-		align-items: center; 
-		gap: 12px;
-		padding: 4px 8px; 
-		background-color: var(--secondary-purple);
-		border-radius: 6px;
-	">
-		<fieldset id="instrumentFilter" style="display:flex; gap:8px; border:none; margin:0; padding:0;">
-			<legend style="display:none;">Instrument Filter (not functional yet)</legend>
-			<label style="color:#e6e6f0; cursor:pointer;">
-				<input type="radio" name="instrument" value="all" checked style="margin-right:4px;">
-				All
-			</label>
-			<label style="color:#e6e6f0; cursor:pointer;">
-				<input type="radio" name="instrument" value="guitar" style="margin-right:4px;">
-				Guitar
-			</label>
-			<label style="color:#e6e6f0; cursor:pointer;">
-				<input type="radio" name="instrument" value="drums" style="margin-right:4px;">
-				Drums
-			</label>
-		</fieldset>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="color_profiles.html" class="active">Color Profiles</a>
+        <a href="game_icons.html">Game Icons</a>
+        <a href="highways.html">Highways</a>
+        <a href="image_bgs.html">Image Backgrounds</a>
+        <a href="video_bgs.html">Video Backgrounds</a>
+        <a href="video_highways.html">Video Highways</a>
+
+        <div id="transparencyFilterContainer" style="
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 4px 8px;
+            background-color: var(--secondary-purple);
+            border-radius: 6px;
+        ">
+            <fieldset id="instrumentFilter" style="display:flex; gap:8px; border:none; margin:0; padding:0;">
+                <legend style="display:none;">Instrument</legend>
+                <label style="color:#e6e6f0; cursor:pointer;">
+                    <input type="radio" name="instrument" value="guitar" checked style="margin-right:4px;">
+                    Guitar
+                </label>
+                <label style="color:#e6e6f0; cursor:pointer;">
+                    <input type="radio" name="instrument" value="drums" style="margin-right:4px;">
+                    Drums
+                </label>
+            </fieldset>
+        </div>
+
+        <div class="top-info">
+            <span id="scan-mode">Scan mode: <strong></strong></span>
+        </div>
+    </nav>
+</div>
+
+<div id="main-container">
+    <div id="indexSidebar">
+        <div id="topRow"></div>
+        <div id="bottomRow">
+            <input type="text" id="indexSearch" placeholder="Search">
+            <div id="sliderRow">
+                <span id="sliderLabel">Choose profile size:</span>
+                <input type="range" id="thumbSizeSlider" min="0" max="11" value="0">
+                <span id="thumbSizeValue"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="profiles-panel-wrapper">
+		<div id="profiles-panel"></div>
 	</div>
 
-	<div class="top-info">
-		<span id="scan-mode">Scan mode: <strong></strong></span>
-	</div>
-	
-</nav>
-
-<div id="colorProfiles"></div>
+    <div id="detail-panel">
+        <div class="detail-view" id="detail-view"></div>
+    </div>
+</div>
 
 <script>
+// ===== Data & helpers =====
+const profilesPanel = document.getElementById('profiles-panel');
+let scanSummary = null;
+
+const GUITAR_KEYS = ['note_green','note_red','note_yellow','note_blue','note_orange','note_sp_active','note_open'];
+const DRUM_KEYS = ['tom_blue','tom_yellow','tom_red','tom_green','cym_blue','cym_yellow','cym_red','cym_green','note_kick','tom_sp_active'];
+const HEX_COLOR_REGEX = /^#[0-9A-Fa-f]{6}$/;
+
+function hasRealValue(profile, keys) {
+    return keys.some(k => typeof profile[k]==='string' && HEX_COLOR_REGEX.test(profile[k]));
+}
+
+// ===== Load scan summary =====
 fetch('scan_summary.json')
-.then(response => response.json())
+.then(r => r.json())
 .then(data => {
-    // Display scan mode
+    scanSummary = data;
+
+    // Scan mode
     let scanModeText = 'Unknown';
-	if (data.scan_mode === 'T') scanModeText = 'Test';
-	else if (data.scan_mode === 'A') scanModeText = 'Actual';
-	else if (data.scan_mode === 'B') scanModeText = 'Both';
+    if (data.scan_mode === 'T') scanModeText = 'Test';
+    else if (data.scan_mode === 'A') scanModeText = 'Actual';
+    else if (data.scan_mode === 'B') scanModeText = 'Both';
+    document.querySelector('#scan-mode strong').textContent = scanModeText;
 
-	document.querySelector('#scan-mode strong').innerText = scanModeText;
+    renderProfiles();
+    updateProfileCountForInstrument();
+});
 
-    // Populate Color Profiles
-    const profilesContainer = document.getElementById('colorProfiles');
-    if(data.color_profiles_data) {
-        data.color_profiles_data.forEach(profile => {
-            const section = document.createElement('details');
-            section.open = true; // expanded by default
+// ===== Render profiles =====
+function renderProfiles() {
+    profilesPanel.innerHTML = '';
+    const selectedInstrument = document.querySelector('#instrumentFilter input[name="instrument"]:checked').value;
 
-            const summary = document.createElement('summary');
-            summary.textContent = profile.filename;
-            section.appendChild(summary);
+    scanSummary.color_profiles_data.forEach(profile => {
+        let showProfile = selectedInstrument==='guitar' ? hasRealValue(profile,GUITAR_KEYS) : hasRealValue(profile,DRUM_KEYS);
+        if (!showProfile) return;
 
-            const swatchContainer = document.createElement('div');
-            swatchContainer.className = 'swatch-container';
+        const card = document.createElement('div');
+        card.className = 'profile-card';
 
-            ['note_green','note_red','note_yellow','note_blue','note_orange','note_sp_active','note_open']
-                .forEach(field => {
-                    const swatch = document.createElement('div');
-                    swatch.className = 'swatch';
-                    const value = profile[field];
-                    if(value) {
-                        swatch.style.backgroundColor = value;
-                    } else {
-                        swatch.textContent = 'X';
-                    }
-                    swatchContainer.appendChild(swatch);
-                });
+        const nameDiv = document.createElement('div');
+        nameDiv.className = 'thumbnail-caption';
+        nameDiv.textContent = profile.filename.replace(/\.[^/.]+$/, '');
+        card.appendChild(nameDiv);
 
-            section.appendChild(swatchContainer);
-            profilesContainer.appendChild(section);
+        const swatchGrid = document.createElement('div');
+        swatchGrid.className = 'thumbnail-box';
+
+        const fields = selectedInstrument==='guitar' ? GUITAR_KEYS : DRUM_KEYS;
+        fields.forEach(key => {
+            const sw = document.createElement('div');
+            sw.style.backgroundColor = profile[key] || '#ccc';
+            swatchGrid.appendChild(sw);
         });
-    }
-})
-.catch(error => console.error('Error loading scan_summary.json:', error));
-</script>
 
+        card.appendChild(swatchGrid);
+
+        const btn = document.createElement('button');
+        btn.className = 'download-btn';
+        btn.textContent = 'Download';
+        btn.onclick = (e) => {
+            e.stopPropagation();
+            const a = document.createElement('a');
+            a.href = './color_profiles/' + profile.filename;
+            a.download = profile.filename;
+            a.click();
+        };
+        card.appendChild(btn);
+
+        profilesPanel.appendChild(card);
+    });
+}
+
+// ===== Instrument filter =====
+document.querySelectorAll('#instrumentFilter input[name="instrument"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+        renderProfiles();
+        updateProfileCountForInstrument();
+    });
+});
+
+function updateProfileCountForInstrument() {
+    if (!scanSummary) return;
+    const selected = document.querySelector('#instrumentFilter input[name="instrument"]:checked').value;
+    let count = scanSummary.color_profiles_data.filter(p => selected==='guitar' ? hasRealValue(p,GUITAR_KEYS) : hasRealValue(p,DRUM_KEYS)).length;
+    document.getElementById('profile-count-title').textContent = ` (${count.toLocaleString()})`;
+}
+
+// ===== Index bar flash =====
+const topRow = document.getElementById('topRow');
+const profilesDivs = () => Array.from(profilesPanel.children);
+
+function setupIndexButtons() {
+    const numbersBtn = document.createElement('div');
+    numbersBtn.textContent = '0-9';
+    numbersBtn.className = 'indexButton';
+    numbersBtn.dataset.letter='0-9';
+    topRow.appendChild(numbersBtn);
+
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(l=>{
+        const btn = document.createElement('div');
+        btn.textContent=l;
+        btn.className='indexButton';
+        btn.dataset.letter=l;
+        topRow.appendChild(btn);
+    });
+
+    const topBtn = document.createElement('div');
+    topBtn.textContent='(↑)';
+    topBtn.title='Back to top';
+    topBtn.className='indexButton topButton';
+    topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+    topRow.appendChild(topBtn);
+
+    topRow.querySelectorAll('.indexButton').forEach(btn=>{
+        btn.addEventListener('click',()=>{
+            const target = btn.dataset.letter;
+            let found=null;
+
+            topRow.querySelectorAll('.indexButton').forEach(b=>b.classList.remove('active'));
+
+            profilesDivs().forEach(card=>{
+                const firstChar=card.querySelector('.thumbnail-caption').textContent[0].toUpperCase();
+                if((target==='0-9'&&/\d/.test(firstChar)&&!found)||(firstChar===target&&!found)){
+                    found=card;
+                }
+            });
+
+            if(found){
+                btn.classList.add('active');
+                setTimeout(()=>btn.classList.remove('active'),1200);
+
+                const swatchGrid=found.querySelector('.thumbnail-box');
+                swatchGrid.classList.remove('flash');
+                void swatchGrid.offsetWidth;
+                swatchGrid.classList.add('flash');
+                setTimeout(()=>swatchGrid.classList.remove('flash'),2500);
+
+                const topContainerHeight = document.getElementById('top-container').offsetHeight + 10; // 10px gap
+				found.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				window.scrollBy(0, -topContainerHeight);
+
+            }else{
+                btn.classList.remove('shake');
+                void btn.offsetWidth;
+                btn.classList.add('shake','red');
+                setTimeout(()=>btn.classList.remove('shake','red'),1000);
+            }
+        });
+    });
+}
+
+setupIndexButtons();
+
+// ===== Slider scaling =====
+const slider=document.getElementById('thumbSizeSlider');
+const sizeValue=document.getElementById('thumbSizeValue');
+
+const sizeLabels=[
+    "Quantum Ant Man","LEGO Emmet","Sonic Screwdriver","Minion","Hobbit","Wreck-it Ralph",
+    "Smaug","Stay-Puft Marshmallow Man","Stark Tower","Drej Mothership","Death Star","Gallifrey"
+];
+
+slider.addEventListener('input',()=>{
+    const scale=0.7+slider.value*0.1; // 12 steps
+    document.querySelectorAll('.profile-card .thumbnail-box').forEach(box=>{
+        box.style.transform=`scale(${scale})`;
+        box.style.transformOrigin='center top';
+    });
+    sizeValue.textContent=sizeLabels[slider.value];
+});
+
+slider.dispatchEvent(new Event('input'));
+</script>
 </body>
 </html>
