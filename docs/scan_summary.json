@@ -1,8 +1,8 @@
 {
-    "timestamp": "2026-04-04 19:26:17.624723",
+    "timestamp": "2026-04-04 21:38:51.039522",
     "scan_mode": "A",
     "counts": {
-        "highways": 1455,
+        "highways": 1571,
         "color_profiles": 532
     },
     "errors": {},
@@ -382,6 +382,7 @@
         "Epic Color Road.png",
         "Epic v3.png",
         "Epico Moment.png",
+        "ERDL Camo.png",
         "Eva.jpg",
         "Eyes.png",
         "F-Zero Big Blue.png",
@@ -399,6 +400,7 @@
         "F1 Grid.png",
         "Face.png",
         "Fail.png",
+        "Fall Camo.png",
         "Fancy Shape.png",
         "Fancy's Highway 2.png",
         "Fancy's Highway.png",
@@ -411,8 +413,10 @@
         "Firefly Deluxe.png",
         "Flamin' Hot.jpg",
         "Flamingo.png",
+        "Flora Camo.png",
         "Flower Power.png",
         "Flower.png",
+        "Flowers.jpg",
         "Flowers.png",
         "Fluttershy Deluxe Fancy.png",
         "Fluttershy Deluxe.png",
@@ -455,6 +459,10 @@
         "Geometric Pastel Yellow.png",
         "GH 2.png",
         "GH 3.png",
+        "GH 6 Proto Effect Highway OG.png",
+        "GH 6 Proto Effect Highway Purple.png",
+        "GH Style Skull Snake 1.png",
+        "GH Style Skull Snake.png",
         "GH Toy.png",
         "GH Van Halen 2.png",
         "GH1 Clive Winston 2x.png",
@@ -490,6 +498,7 @@
         "GH3 Xavier.png",
         "GH5 High Res.png",
         "GH5.png",
+        "GH6 Proto Highway.png",
         "GH6.png",
         "GHA Brad Whitford.png",
         "GHA Tom Hamilton.png",
@@ -515,9 +524,13 @@
         "GHSH Grand Canyon.png",
         "GHSH London.png",
         "GHSH Quebec.png",
+        "GHTV (Neck).png",
         "GHTV Glam Rock.png",
+        "GIR Highway Test 2.jpg",
+        "Gir.jpg",
         "Glass 2.png",
         "Glass 5.png",
+        "Glass.jpg",
         "Glass.png",
         "Glassy.png",
         "Glitch Midori.png",
@@ -525,9 +538,13 @@
         "Glitter Alt.png",
         "Glitter Dark.png",
         "Glitter.png",
+        "Gold Camo 2.png",
+        "Gold Camo.png",
         "Gold GH5.png",
         "Gold WoR.png",
         "Gold.png",
+        "Goofy Goober Highway.png",
+        "Gorillaz 2024.png",
         "Got Wood.png",
         "Goth 3 Purple.png",
         "Gothic.png",
@@ -557,12 +574,14 @@
         "Gray Swirls.png",
         "Gray Wood 2.png",
         "Gray Wood.png",
+        "Greed.png",
         "Green Blobs.png",
         "Green Caustic WoR.png",
         "Green Caustic.png",
         "Green Center Line.png",
         "Green GH5.png",
         "Green Hex.png",
+        "Green Highway.png",
         "Green Hill Zone.png",
         "Green Kryptonite.jpg",
         "Green Neon.png",
@@ -600,6 +619,7 @@
         "He He.png",
         "He-Man.png",
         "Heart.png",
+        "Hearts.png",
         "Hello Kitty.png",
         "Hero.jpg",
         "Highway 13.png",
@@ -611,6 +631,7 @@
         "Highway Colors.png",
         "Highway Negro.png",
         "Highway Of Chaos.png",
+        "Highway Pattern 2.png",
         "Highway Rojo.png",
         "Highway Rosa.png",
         "Highway Scene.png",
@@ -632,8 +653,13 @@
         "HW Green.png",
         "HW Sunset.png",
         "I Am Batman.png",
+        "Ice Camo.png",
         "Icy Metal.png",
         "Icy.png",
+        "Image.png",
+        "Img 4829.png",
+        "Img 4832.png",
+        "Img 4923.jpg",
         "Inlay Floral.png",
         "Insanity.png",
         "Inscryption.png",
@@ -647,6 +673,8 @@
         "Jinx WoR Dark.jpg",
         "Jinx.jpg",
         "Joey D.jpg",
+        "Jojo Highway.jpg",
+        "Jojo Purple Highway.jpg",
         "Joy 100 Focus R.png",
         "Joy 100 Focus Y.png",
         "Joy 100 Focus.png",
@@ -682,6 +710,7 @@
         "Kik's Custom 7.png",
         "Kik's Custom 8.png",
         "Kik's Custom 9.png",
+        "Kiko Marciano XD XD XD.png",
         "Killer Queen 3.png",
         "Killer Queen B&W.png",
         "Killer Queen Purple Gold.png",
@@ -690,6 +719,7 @@
         "Kirby 2.jpg",
         "Kirby.png",
         "Kiryu.png",
+        "Kisses.png",
         "Kkl.png",
         "Lara Croft.jpg",
         "Laser Thingy Lanes.png",
@@ -704,12 +734,14 @@
         "Light Gray.png",
         "Light Green Ivy.jpg",
         "Light Pink Roses.jpg",
+        "Light Saber.jpg",
         "Light Swiggle Blue Double X.png",
         "Light Swiggle Blue Double.png",
         "Light Swiggle Purple Double X.png",
         "Light Swiggle Purple Double.png",
         "Light Swiggle Purple.png",
         "Light Swiggle.png",
+        "Linia De Pista.png",
         "Lion.png",
         "Liquid Metal - Black.png",
         "Liquid Metal - Grey.png",
@@ -722,6 +754,7 @@
         "Luna.png",
         "Lupin III Green Jacket.png",
         "Lupin III Highway Green Jacket Ver. 2 Part 6.png",
+        "Lust.png",
         "Lyra Deluxe v2.png",
         "Mac & Cheese Dark.png",
         "Mac & Cheese.png",
@@ -732,6 +765,8 @@
         "Magenta WoR.png",
         "Magic School Bus.png",
         "Maple.jpg",
+        "Marble 3.png",
+        "Marble.png",
         "Mario & Luigi Dark.png",
         "Mario & Luigi.png",
         "Mario Blocks.jpg",
@@ -741,6 +776,7 @@
         "Marios.png",
         "Maroon Diamond Plate.png",
         "Marshmallows.png",
+        "Marx.png",
         "Mauve Purple.png",
         "Meat Art Crimes TM Dark.png",
         "Meat Art Crimes TM.png",
@@ -788,6 +824,7 @@
         "Moon 1.jpg",
         "Moon 2.jpg",
         "More Raccoons.png",
+        "Mortal Kombat.png",
         "Moshed 2022-4-27-11-56-24.jpg",
         "Moshed 60's Planets.jpg",
         "Moshed Pink Broken Tiles.jpg",
@@ -819,6 +856,7 @@
         "Neon Devil.png",
         "Neon Future.png",
         "Neon Hexagons Gray.png",
+        "Neon Highway.png",
         "Neon Lines 50%.png",
         "Neon Lines.png",
         "Neon Paths Dark.png",
@@ -832,6 +870,7 @@
         "Neon Squares Alt.png",
         "Neon Squares.png",
         "Neon.png",
+        "Nevada Camo.png",
         "Nick Cage Dark.png",
         "Nick Cage.png",
         "Night Stars Dark.png",
@@ -854,7 +893,10 @@
         "Obsidian Hexagon.png",
         "Octavia Deluxe.png",
         "Official Gus CH Highway.png",
+        "OG SN Ped Test 1 Airoads LAS Dark.png",
+        "OG SN Ped Test 1 Airoads LAS.png",
         "Ohm.jpg",
+        "Olive Camo.png",
         "Orange & Blue Blurry Dark.png",
         "Orange & Blue Blurry.png",
         "Orange Blobs.png",
@@ -879,8 +921,10 @@
         "Overdose.jpg",
         "Overdrive Neck Topaz .png",
         "Pac-Man.png",
+        "Pandas Love Rainbows.png",
         "Paper Dark.png",
         "Paper Mario.png",
+        "Partially Transparent (Undecided to keep or not).png",
         "Pastel Rainbow Sparkles.jpg",
         "Pastel Rainbow.png",
         "Patriotic.png",
@@ -924,6 +968,7 @@
         "Pink Flowers.jpg",
         "Pink Girder.png",
         "Pink Hexagons.png",
+        "Pink Highway.png",
         "Pink Lasers.jpg",
         "Pink Lights.jpg",
         "Pink Lines.png",
@@ -951,6 +996,8 @@
         "Plumatoes 2.png",
         "Plumatoes.jpg",
         "Pokemon 2.jpg",
+        "Pokemon 30.png",
+        "Pokemon Highway-Railing.png",
         "Pokemon Stadium.png",
         "Pokemon.jpg",
         "Portal 2 Dark.png",
@@ -958,11 +1005,13 @@
         "Portal.png",
         "Proba.png",
         "PS Hexagon.png",
+        "PSX Wipeout.png",
         "Psychedelic Darker.png",
         "Psychedelic Edge.png",
         "Psychedelic Peace Dark.png",
         "Psychedelic Peace.png",
         "Psychedelic.png",
+        "Purp Roses Red.png",
         "Purple & Red.png",
         "Purple Abstract 2.png",
         "Purple Abstract.png",
@@ -982,6 +1031,7 @@
         "Purple Graveyard Shift Dark.png",
         "Purple Grid.png",
         "Purple Hex.png",
+        "Purple Ice.png",
         "Purple Lasers.png",
         "Purple Lines 2.png",
         "Purple Lines.png",
@@ -995,6 +1045,7 @@
         "Purple Shapes Dark.png",
         "Purple Shapes.png",
         "Purple Shiny.png",
+        "Purple Snake (238170).jpg",
         "Purple Space 2.png",
         "Purple Space Neon Heart.jpg",
         "Purple Space.png",
@@ -1004,10 +1055,12 @@
         "Purple Stars 2.png",
         "Purple Stars With Stripes.png",
         "Purple Stars.png",
+        "Purple Storm FrostByte.png",
         "Purple Stripes Dark.png",
         "Purple Stripes.png",
         "Purple Tapes.png",
         "Purple Thicc Rainbow.png",
+        "Purple Trails FrostByte.png",
         "Purple Trees.jpg",
         "Purple Wavy Lines.png",
         "Purple WoR.png",
@@ -1017,6 +1070,8 @@
         "Purplex.png",
         "Puyo High Test.png",
         "Puyo.png",
+        "Q. o. t. S. A.png",
+        "R Decyrs.png",
         "Rahkshi Boi 1.jpg",
         "Rahkshi Boi 2.jpg",
         "Rain Barrow.png",
@@ -1039,6 +1094,8 @@
         "Rainbow Edges 2.png",
         "Rainbow Edges.png",
         "Rainbow Galaxy.png",
+        "Rainbow Hexagon Highway Borderless.png",
+        "Rainbow Hexagon Highway.png",
         "Rainbow Hueistic.png",
         "Rainbow Pixel Stars.png",
         "Rainbow Road Dark.png",
@@ -1065,8 +1122,10 @@
         "RB3 Purple.png",
         "RB3ish But Blue.png",
         "Recolored 8-bit Default GH Live.png",
+        "Red Belt.png",
         "Red Blue Dark.png",
         "Red Border.png",
+        "Red Camo.png",
         "Red Car Dark.png",
         "Red Car.png",
         "Red Caustic GH5.png",
@@ -1088,12 +1147,15 @@
         "Red Shiny.png",
         "Red Side Zigzag.png",
         "Red Star.png",
+        "Red Tiger Camo 2.png",
+        "Red Tiger Camo.png",
         "Red Yarn .png",
         "Red, Black, & White Lines.jpg",
         "Red.png",
         "Regal Contour.png",
         "Retro X.png",
         "Reverate.jpg",
+        "Rinnegan.jpg",
         "Rival's Pyramids.png",
         "Road.png",
         "Rock Band.png",
@@ -1101,10 +1163,20 @@
         "Roses & Barbed Wire.png",
         "Roses.png",
         "Rosewood Fretboard.jpg",
+        "Route FrLf Highway.png",
         "Royal Carpet.jpg",
+        "Rust In Peace Highway.png",
+        "Rusty Cage Tp.png",
+        "SA2B Dark.png",
+        "SA2B Mono.png",
+        "SA2B Muted.png",
+        "SA2B.png",
+        "Sahara Camo.png",
         "Salty Sweet.png",
         "Sana.png",
         "Sand.png",
+        "Sanrio.png",
+        "Sanriosee.png",
         "Saturn 1 (Darkened 50%).jpg",
         "Saturn 1 (Darkened 66%).jpg",
         "Saturn 1 (Darkened 83%).jpg",
@@ -1152,6 +1224,7 @@
         "See Through Purple.png",
         "Sequence Bowl.png",
         "Shards.png",
+        "Shattering Lightning.png",
         "Shayedy.jpg",
         "Sheet Music Dark.png",
         "Sheet Music.png",
@@ -1162,6 +1235,8 @@
         "Shrekway 75.png",
         "Shrekway.png",
         "Shy Guy.jpg",
+        "Siberia Camo.png",
+        "Simple Darker WoR Highway.png",
         "Simple Flame Alt Dark.png",
         "Simple Flame Alt.png",
         "Simple Flame Dark.png",
@@ -1200,6 +1275,8 @@
         "Smooth.png",
         "Snake Eating Itself v2.png",
         "Snake Eating Itself.png",
+        "Snake HW 2 Alt.png",
+        "Snake HW Alt.png",
         "Snythwave Dark.png",
         "Snythwave.png",
         "Soda 01.png",
@@ -1226,9 +1303,11 @@
         "Space Motif.jpg",
         "Space.png",
         "Spacial.png",
+        "Sparks FrostByte.png",
         "Spider-Man 2.png",
         "Spider-Man 3.png",
         "Spider-Man.png",
+        "Spider.png",
         "Spike Deluxe.png",
         "Spikes.png",
         "Spiky Clouds.png",
@@ -1242,8 +1321,10 @@
         "Splatter 2 .jpg",
         "SpongeBob & Mr. Krabs Dark.jpg",
         "SpongeBob & Mr. Krabs.jpg",
+        "Spongebob Doodles (IMG_4663).png",
         "Spongebob.png",
         "Squib 2.png",
+        "Squid Game.png",
         "Squiggly Strings.jpg",
         "St. Patrick's Day 2021.png",
         "Stained Glass 2.png",
@@ -1252,10 +1333,14 @@
         "Star Highway.png",
         "Star Power Hexagon Pattern.png",
         "Star Power.png",
+        "Star Wars Datapad Black Wallpaper Scaled.jpg",
         "Star Wars.png",
         "Starry Night.jpg",
         "Stars 2.png",
         "Stars 3.png",
+        "Stars And Stripes Darkened.jpg",
+        "Stars And Stripes Full Saturation.jpg",
+        "Stars And Stripes Monochrome.jpg",
         "Stars Maps Dark.png",
         "Stars Maps.png",
         "Stars.png",
@@ -1264,6 +1349,7 @@
         "Stealth.png",
         "Steel Crosshatch 2.png",
         "Steel Crosshatch.png",
+        "Steins Gate.png",
         "Stickheadz32.jpg",
         "Stormtrooper Sketch.png",
         "Stormtrooper.png",
@@ -1320,6 +1406,8 @@
         "The Shining.png",
         "Thin Blue Lines.png",
         "This.jpg",
+        "Tiger Camo.png",
+        "Tigre.png",
         "Time To Party Dark.png",
         "Time To Party.png",
         "Tinted Glass.png",
@@ -1333,6 +1421,8 @@
         "Tristana 2.png",
         "Tristana Dark.png",
         "Tristana.png",
+        "Trivium Dragon Dark 2.png",
+        "Trivium Dragon Dark.png",
         "Trixie Cape Deluxe.png",
         "Trixie Deluxe.png",
         "Tron Blue.png",
@@ -1352,6 +1442,9 @@
         "Unicorn.png",
         "Universal Pixelation.png",
         "Universo.png",
+        "Untitled  122_20241027234020.png",
+        "Up Highway.png",
+        "Urban Camo.png",
         "USA Does Still Exist.png",
         "Vader 2.png",
         "Valentine's Highway Dark.png",
@@ -1385,6 +1478,7 @@
         "Wario & Count Cannoli Dark.jpg",
         "Wario & Count Cannoli.jpg",
         "Warriors Of Rock.png",
+        "Warsaw Camo.png",
         "Weird Chicken.png",
         "Which One Is Your Favorite Superhero.jpg",
         "White & Red Arcs.jpg",
@@ -1392,13 +1486,22 @@
         "White Big Emblems.png",
         "White Emblems 2.png",
         "White Emblems.png",
+        "White Pony BB.jpg",
+        "White Pony OG.jpg",
         "Whose Line.png",
+        "Wii WoR.png",
         "Windows.png",
         "Wipeout 2097 Alt.png",
+        "Wipeout Highway.png",
+        "With The Beatles.png",
         "Wolf.png",
         "Wolfgang VH.png",
         "Wood Hero.png",
         "Wood.png",
+        "Wooden Highway by Kanske.png",
+        "Woodland Camo 2.png",
+        "Woodland Camo 3.png",
+        "Woodland Camo.png",
         "Wool Blocks.png",
         "WoR Cyan.png",
         "WoR Purple 2.png",
@@ -1432,6 +1535,7 @@
         "WT Tomm.png",
         "WT Winston.png",
         "WT Wylde.png",
+        "WWE.png",
         "X Abstract.jpg",
         "X2 Complete.png",
         "X2.jpg",
@@ -1443,6 +1547,7 @@
         "X4.jpg",
         "Xmas Fretboard.png",
         "Yarr.png",
+        "Yellow Belt.png",
         "Yellow Caustic WoR.png",
         "Yellow Caustic.png",
         "Yellow Purple 2.png",
@@ -1456,6 +1561,7 @@
         "Yukine 70%.png",
         "Yukine Dark.png",
         "Yukine.png",
+        "Yukon Camo.png",
         "YW.png",
         "Zecora Deluxe.png",
         "ZGS B01.png",
@@ -1464,7 +1570,17 @@
         "ZGS B04.png",
         "ZGS B05.png",
         "ZGS B06.png",
-        "ZGS B07.png"
+        "ZGS B07.png",
+        "Zuumi Drop Purple Orng 01.png",
+        "Zuumi Drop Purple.png",
+        "Zuumi Drop Red 01.png",
+        "Zuumi Drop Sienna.png",
+        "Zuumi Drop Silver Red.png",
+        "Zuumi Galaxy 01.png",
+        "Zuumi Galaxy 02.png",
+        "Zuumi Galaxy 03.png",
+        "Zuumi Galaxy RGB 01.png",
+        "Zuumi Grey Black.png"
     ],
     "thumbnails": [
         {
@@ -4444,6 +4560,14 @@
             "height": 1024
         },
         {
+            "file": "ERDL Camo.png",
+            "thumbnail": "thumbnails/ERDL Camo.png",
+            "transparent": false,
+            "size": 485023,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Eva.jpg",
             "thumbnail": "thumbnails/Eva.jpg",
             "transparent": false,
@@ -4580,6 +4704,14 @@
             "height": 1024
         },
         {
+            "file": "Fall Camo.png",
+            "thumbnail": "thumbnails/Fall Camo.png",
+            "transparent": false,
+            "size": 331945,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Fancy Shape.png",
             "thumbnail": "thumbnails/Fancy Shape.png",
             "transparent": false,
@@ -4676,6 +4808,14 @@
             "height": 1082
         },
         {
+            "file": "Flora Camo.png",
+            "thumbnail": "thumbnails/Flora Camo.png",
+            "transparent": false,
+            "size": 476736,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Flower Power.png",
             "thumbnail": "thumbnails/Flower Power.png",
             "transparent": false,
@@ -4690,6 +4830,14 @@
             "size": 361884,
             "width": 512,
             "height": 1024
+        },
+        {
+            "file": "Flowers.jpg",
+            "thumbnail": "thumbnails/Flowers.jpg",
+            "transparent": false,
+            "size": 32185,
+            "width": 512,
+            "height": 1042
         },
         {
             "file": "Flowers.png",
@@ -5028,6 +5176,38 @@
             "height": 1024
         },
         {
+            "file": "GH 6 Proto Effect Highway OG.png",
+            "thumbnail": "thumbnails/GH 6 Proto Effect Highway OG.png",
+            "transparent": true,
+            "size": 233924,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "GH 6 Proto Effect Highway Purple.png",
+            "thumbnail": "thumbnails/GH 6 Proto Effect Highway Purple.png",
+            "transparent": true,
+            "size": 385493,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "GH Style Skull Snake 1.png",
+            "thumbnail": "thumbnails/GH Style Skull Snake 1.png",
+            "transparent": false,
+            "size": 2309623,
+            "width": 1024,
+            "height": 2048
+        },
+        {
+            "file": "GH Style Skull Snake.png",
+            "thumbnail": "thumbnails/GH Style Skull Snake.png",
+            "transparent": false,
+            "size": 2349010,
+            "width": 1024,
+            "height": 2048
+        },
+        {
             "file": "GH Toy.png",
             "thumbnail": "thumbnails/GH Toy.png",
             "transparent": true,
@@ -5308,6 +5488,14 @@
             "height": 1344
         },
         {
+            "file": "GH6 Proto Highway.png",
+            "thumbnail": "thumbnails/GH6 Proto Highway.png",
+            "transparent": false,
+            "size": 218488,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "GH6.png",
             "thumbnail": "thumbnails/GH6.png",
             "transparent": false,
@@ -5508,10 +5696,34 @@
             "height": 1024
         },
         {
+            "file": "GHTV (Neck).png",
+            "thumbnail": "thumbnails/GHTV (Neck).png",
+            "transparent": false,
+            "size": 232556,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "GHTV Glam Rock.png",
             "thumbnail": "thumbnails/GHTV Glam Rock.png",
             "transparent": false,
             "size": 681457,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "GIR Highway Test 2.jpg",
+            "thumbnail": "thumbnails/GIR Highway Test 2.jpg",
+            "transparent": false,
+            "size": 862497,
+            "width": 1030,
+            "height": 2048
+        },
+        {
+            "file": "Gir.jpg",
+            "thumbnail": "thumbnails/Gir.jpg",
+            "transparent": false,
+            "size": 137845,
             "width": 512,
             "height": 1024
         },
@@ -5530,6 +5742,14 @@
             "size": 86360,
             "width": 468,
             "height": 936
+        },
+        {
+            "file": "Glass.jpg",
+            "thumbnail": "thumbnails/Glass.jpg",
+            "transparent": false,
+            "size": 120096,
+            "width": 512,
+            "height": 1042
         },
         {
             "file": "Glass.png",
@@ -5588,6 +5808,22 @@
             "height": 1344
         },
         {
+            "file": "Gold Camo 2.png",
+            "thumbnail": "thumbnails/Gold Camo 2.png",
+            "transparent": false,
+            "size": 861193,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Gold Camo.png",
+            "thumbnail": "thumbnails/Gold Camo.png",
+            "transparent": false,
+            "size": 27753,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Gold GH5.png",
             "thumbnail": "thumbnails/Gold GH5.png",
             "transparent": false,
@@ -5608,6 +5844,22 @@
             "thumbnail": "thumbnails/Gold.png",
             "transparent": false,
             "size": 471982,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Goofy Goober Highway.png",
+            "thumbnail": "thumbnails/Goofy Goober Highway.png",
+            "transparent": false,
+            "size": 14295,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Gorillaz 2024.png",
+            "thumbnail": "thumbnails/Gorillaz 2024.png",
+            "transparent": false,
+            "size": 795380,
             "width": 512,
             "height": 1024
         },
@@ -5844,6 +6096,14 @@
             "height": 1024
         },
         {
+            "file": "Greed.png",
+            "thumbnail": "thumbnails/Greed.png",
+            "transparent": false,
+            "size": 723702,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Green Blobs.png",
             "thumbnail": "thumbnails/Green Blobs.png",
             "transparent": false,
@@ -5888,6 +6148,14 @@
             "thumbnail": "thumbnails/Green Hex.png",
             "transparent": false,
             "size": 581969,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Green Highway.png",
+            "thumbnail": "thumbnails/Green Highway.png",
+            "transparent": false,
+            "size": 3768387,
             "width": 512,
             "height": 1024
         },
@@ -6188,6 +6456,14 @@
             "height": 1024
         },
         {
+            "file": "Hearts.png",
+            "thumbnail": "thumbnails/Hearts.png",
+            "transparent": false,
+            "size": 154384,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Hello Kitty.png",
             "thumbnail": "thumbnails/Hello Kitty.png",
             "transparent": false,
@@ -6274,6 +6550,14 @@
             "size": 1255244,
             "width": 672,
             "height": 1344
+        },
+        {
+            "file": "Highway Pattern 2.png",
+            "thumbnail": "thumbnails/Highway Pattern 2.png",
+            "transparent": false,
+            "size": 210167,
+            "width": 500,
+            "height": 1024
         },
         {
             "file": "Highway Rojo.png",
@@ -6444,6 +6728,14 @@
             "height": 1624
         },
         {
+            "file": "Ice Camo.png",
+            "thumbnail": "thumbnails/Ice Camo.png",
+            "transparent": false,
+            "size": 660567,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Icy Metal.png",
             "thumbnail": "thumbnails/Icy Metal.png",
             "transparent": false,
@@ -6458,6 +6750,38 @@
             "size": 707997,
             "width": 512,
             "height": 1024
+        },
+        {
+            "file": "Image.png",
+            "thumbnail": "thumbnails/Image.png",
+            "transparent": false,
+            "size": 187749,
+            "width": 299,
+            "height": 705
+        },
+        {
+            "file": "Img 4829.png",
+            "thumbnail": "thumbnails/Img 4829.png",
+            "transparent": false,
+            "size": 734935,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Img 4832.png",
+            "thumbnail": "thumbnails/Img 4832.png",
+            "transparent": false,
+            "size": 424402,
+            "width": 512,
+            "height": 1042
+        },
+        {
+            "file": "Img 4923.jpg",
+            "thumbnail": "thumbnails/Img 4923.jpg",
+            "transparent": false,
+            "size": 76989,
+            "width": 512,
+            "height": 1042
         },
         {
             "file": "Inlay Floral.png",
@@ -6562,6 +6886,22 @@
             "size": 35978,
             "width": 512,
             "height": 1024
+        },
+        {
+            "file": "Jojo Highway.jpg",
+            "thumbnail": "thumbnails/Jojo Highway.jpg",
+            "transparent": false,
+            "size": 81884,
+            "width": 1080,
+            "height": 2160
+        },
+        {
+            "file": "Jojo Purple Highway.jpg",
+            "thumbnail": "thumbnails/Jojo Purple Highway.jpg",
+            "transparent": false,
+            "size": 72256,
+            "width": 1080,
+            "height": 2160
         },
         {
             "file": "Joy 100 Focus R.png",
@@ -6844,6 +7184,14 @@
             "height": 1024
         },
         {
+            "file": "Kiko Marciano XD XD XD.png",
+            "thumbnail": "thumbnails/Kiko Marciano XD XD XD.png",
+            "transparent": false,
+            "size": 70590,
+            "width": 266,
+            "height": 434
+        },
+        {
             "file": "Killer Queen 3.png",
             "thumbnail": "thumbnails/Killer Queen 3.png",
             "transparent": false,
@@ -6904,6 +7252,14 @@
             "thumbnail": "thumbnails/Kiryu.png",
             "transparent": false,
             "size": 1008907,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Kisses.png",
+            "thumbnail": "thumbnails/Kisses.png",
+            "transparent": false,
+            "size": 337105,
             "width": 512,
             "height": 1024
         },
@@ -7020,6 +7376,14 @@
             "height": 1368
         },
         {
+            "file": "Light Saber.jpg",
+            "thumbnail": "thumbnails/Light Saber.jpg",
+            "transparent": false,
+            "size": 102690,
+            "width": 492,
+            "height": 1066
+        },
+        {
             "file": "Light Swiggle Blue Double X.png",
             "thumbnail": "thumbnails/Light Swiggle Blue Double X.png",
             "transparent": true,
@@ -7064,6 +7428,14 @@
             "thumbnail": "thumbnails/Light Swiggle.png",
             "transparent": true,
             "size": 613199,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Linia De Pista.png",
+            "thumbnail": "thumbnails/Linia De Pista.png",
+            "transparent": true,
+            "size": 177631,
             "width": 512,
             "height": 1024
         },
@@ -7164,6 +7536,14 @@
             "height": 1024
         },
         {
+            "file": "Lust.png",
+            "thumbnail": "thumbnails/Lust.png",
+            "transparent": false,
+            "size": 712467,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Lyra Deluxe v2.png",
             "thumbnail": "thumbnails/Lyra Deluxe v2.png",
             "transparent": false,
@@ -7244,6 +7624,22 @@
             "height": 1024
         },
         {
+            "file": "Marble 3.png",
+            "thumbnail": "thumbnails/Marble 3.png",
+            "transparent": false,
+            "size": 693332,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Marble.png",
+            "thumbnail": "thumbnails/Marble.png",
+            "transparent": false,
+            "size": 707309,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Mario & Luigi Dark.png",
             "thumbnail": "thumbnails/Mario & Luigi Dark.png",
             "transparent": false,
@@ -7312,6 +7708,14 @@
             "thumbnail": "thumbnails/Marshmallows.png",
             "transparent": false,
             "size": 60410,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Marx.png",
+            "thumbnail": "thumbnails/Marx.png",
+            "transparent": false,
+            "size": 196979,
             "width": 512,
             "height": 1024
         },
@@ -7692,6 +8096,14 @@
             "height": 1024
         },
         {
+            "file": "Mortal Kombat.png",
+            "thumbnail": "thumbnails/Mortal Kombat.png",
+            "transparent": false,
+            "size": 401546,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Moshed 2022-4-27-11-56-24.jpg",
             "thumbnail": "thumbnails/Moshed 2022-4-27-11-56-24.jpg",
             "transparent": false,
@@ -7940,6 +8352,14 @@
             "height": 1024
         },
         {
+            "file": "Neon Highway.png",
+            "thumbnail": "thumbnails/Neon Highway.png",
+            "transparent": false,
+            "size": 12618,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Neon Lines 50%.png",
             "thumbnail": "thumbnails/Neon Lines 50%.png",
             "transparent": true,
@@ -8042,6 +8462,14 @@
             "size": 96820,
             "width": 296,
             "height": 592
+        },
+        {
+            "file": "Nevada Camo.png",
+            "thumbnail": "thumbnails/Nevada Camo.png",
+            "transparent": false,
+            "size": 531997,
+            "width": 512,
+            "height": 1024
         },
         {
             "file": "Nick Cage Dark.png",
@@ -8220,10 +8648,34 @@
             "height": 1024
         },
         {
+            "file": "OG SN Ped Test 1 Airoads LAS Dark.png",
+            "thumbnail": "thumbnails/OG SN Ped Test 1 Airoads LAS Dark.png",
+            "transparent": true,
+            "size": 678522,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "OG SN Ped Test 1 Airoads LAS.png",
+            "thumbnail": "thumbnails/OG SN Ped Test 1 Airoads LAS.png",
+            "transparent": true,
+            "size": 792265,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Ohm.jpg",
             "thumbnail": "thumbnails/Ohm.jpg",
             "transparent": false,
             "size": 98927,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Olive Camo.png",
+            "thumbnail": "thumbnails/Olive Camo.png",
+            "transparent": false,
+            "size": 619690,
             "width": 512,
             "height": 1024
         },
@@ -8420,6 +8872,14 @@
             "height": 2100
         },
         {
+            "file": "Pandas Love Rainbows.png",
+            "thumbnail": "thumbnails/Pandas Love Rainbows.png",
+            "transparent": false,
+            "size": 365629,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Paper Dark.png",
             "thumbnail": "thumbnails/Paper Dark.png",
             "transparent": true,
@@ -8434,6 +8894,14 @@
             "size": 260254,
             "width": 512,
             "height": 1024
+        },
+        {
+            "file": "Partially Transparent (Undecided to keep or not).png",
+            "thumbnail": "thumbnails/Partially Transparent (Undecided to keep or not).png",
+            "transparent": true,
+            "size": 9722,
+            "width": 640,
+            "height": 1280
         },
         {
             "file": "Pastel Rainbow Sparkles.jpg",
@@ -8780,6 +9248,14 @@
             "height": 1024
         },
         {
+            "file": "Pink Highway.png",
+            "thumbnail": "thumbnails/Pink Highway.png",
+            "transparent": true,
+            "size": 985826,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Pink Lasers.jpg",
             "thumbnail": "thumbnails/Pink Lasers.jpg",
             "transparent": false,
@@ -8996,6 +9472,22 @@
             "height": 1334
         },
         {
+            "file": "Pokemon 30.png",
+            "thumbnail": "thumbnails/Pokemon 30.png",
+            "transparent": true,
+            "size": 53020,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Pokemon Highway-Railing.png",
+            "thumbnail": "thumbnails/Pokemon Highway-Railing.png",
+            "transparent": true,
+            "size": 548317,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Pokemon Stadium.png",
             "thumbnail": "thumbnails/Pokemon Stadium.png",
             "transparent": false,
@@ -9052,6 +9544,14 @@
             "height": 1024
         },
         {
+            "file": "PSX Wipeout.png",
+            "thumbnail": "thumbnails/PSX Wipeout.png",
+            "transparent": false,
+            "size": 526351,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Psychedelic Darker.png",
             "thumbnail": "thumbnails/Psychedelic Darker.png",
             "transparent": false,
@@ -9088,6 +9588,14 @@
             "thumbnail": "thumbnails/Psychedelic.png",
             "transparent": false,
             "size": 647009,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Purp Roses Red.png",
+            "thumbnail": "thumbnails/Purp Roses Red.png",
+            "transparent": false,
+            "size": 323083,
             "width": 512,
             "height": 1024
         },
@@ -9244,6 +9752,14 @@
             "height": 1024
         },
         {
+            "file": "Purple Ice.png",
+            "thumbnail": "thumbnails/Purple Ice.png",
+            "transparent": false,
+            "size": 920413,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Purple Lasers.png",
             "thumbnail": "thumbnails/Purple Lasers.png",
             "transparent": false,
@@ -9348,6 +9864,14 @@
             "height": 1024
         },
         {
+            "file": "Purple Snake (238170).jpg",
+            "thumbnail": "thumbnails/Purple Snake (238170).jpg",
+            "transparent": false,
+            "size": 36972,
+            "width": 720,
+            "height": 1600
+        },
+        {
             "file": "Purple Space 2.png",
             "thumbnail": "thumbnails/Purple Space 2.png",
             "transparent": false,
@@ -9420,6 +9944,14 @@
             "height": 676
         },
         {
+            "file": "Purple Storm FrostByte.png",
+            "thumbnail": "thumbnails/Purple Storm FrostByte.png",
+            "transparent": false,
+            "size": 619822,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Purple Stripes Dark.png",
             "thumbnail": "thumbnails/Purple Stripes Dark.png",
             "transparent": false,
@@ -9448,6 +9980,14 @@
             "thumbnail": "thumbnails/Purple Thicc Rainbow.png",
             "transparent": false,
             "size": 286480,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Purple Trails FrostByte.png",
+            "thumbnail": "thumbnails/Purple Trails FrostByte.png",
+            "transparent": false,
+            "size": 123702,
             "width": 512,
             "height": 1024
         },
@@ -9522,6 +10062,22 @@
             "size": 187732,
             "width": 596,
             "height": 1192
+        },
+        {
+            "file": "Q. o. t. S. A.png",
+            "thumbnail": "thumbnails/Q. o. t. S. A.png",
+            "transparent": false,
+            "size": 500833,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "R Decyrs.png",
+            "thumbnail": "thumbnails/R Decyrs.png",
+            "transparent": true,
+            "size": 669706,
+            "width": 512,
+            "height": 1024
         },
         {
             "file": "Rahkshi Boi 1.jpg",
@@ -9696,6 +10252,22 @@
             "thumbnail": "thumbnails/Rainbow Galaxy.png",
             "transparent": false,
             "size": 341290,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Rainbow Hexagon Highway Borderless.png",
+            "thumbnail": "thumbnails/Rainbow Hexagon Highway Borderless.png",
+            "transparent": false,
+            "size": 449802,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Rainbow Hexagon Highway.png",
+            "thumbnail": "thumbnails/Rainbow Hexagon Highway.png",
+            "transparent": false,
+            "size": 378514,
             "width": 512,
             "height": 1024
         },
@@ -9908,6 +10480,14 @@
             "height": 1024
         },
         {
+            "file": "Red Belt.png",
+            "thumbnail": "thumbnails/Red Belt.png",
+            "transparent": false,
+            "size": 32985,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Red Blue Dark.png",
             "thumbnail": "thumbnails/Red Blue Dark.png",
             "transparent": false,
@@ -9920,6 +10500,14 @@
             "thumbnail": "thumbnails/Red Border.png",
             "transparent": false,
             "size": 3984,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Red Camo.png",
+            "thumbnail": "thumbnails/Red Camo.png",
+            "transparent": false,
+            "size": 647659,
             "width": 512,
             "height": 1024
         },
@@ -10092,6 +10680,22 @@
             "height": 1024
         },
         {
+            "file": "Red Tiger Camo 2.png",
+            "thumbnail": "thumbnails/Red Tiger Camo 2.png",
+            "transparent": false,
+            "size": 533455,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Red Tiger Camo.png",
+            "thumbnail": "thumbnails/Red Tiger Camo.png",
+            "transparent": false,
+            "size": 44758,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Red Yarn .png",
             "thumbnail": "thumbnails/Red Yarn .png",
             "transparent": false,
@@ -10138,6 +10742,14 @@
             "size": 121127,
             "width": 370,
             "height": 740
+        },
+        {
+            "file": "Rinnegan.jpg",
+            "thumbnail": "thumbnails/Rinnegan.jpg",
+            "transparent": false,
+            "size": 24178,
+            "width": 800,
+            "height": 1422
         },
         {
             "file": "Rival's Pyramids.png",
@@ -10196,10 +10808,74 @@
             "height": 1024
         },
         {
+            "file": "Route FrLf Highway.png",
+            "thumbnail": "thumbnails/Route FrLf Highway.png",
+            "transparent": false,
+            "size": 66839,
+            "width": 512,
+            "height": 1080
+        },
+        {
             "file": "Royal Carpet.jpg",
             "thumbnail": "thumbnails/Royal Carpet.jpg",
             "transparent": false,
             "size": 254566,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Rust In Peace Highway.png",
+            "thumbnail": "thumbnails/Rust In Peace Highway.png",
+            "transparent": false,
+            "size": 330584,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Rusty Cage Tp.png",
+            "thumbnail": "thumbnails/Rusty Cage Tp.png",
+            "transparent": true,
+            "size": 132818,
+            "width": 500,
+            "height": 1024
+        },
+        {
+            "file": "SA2B Dark.png",
+            "thumbnail": "thumbnails/SA2B Dark.png",
+            "transparent": false,
+            "size": 463893,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "SA2B Mono.png",
+            "thumbnail": "thumbnails/SA2B Mono.png",
+            "transparent": false,
+            "size": 443569,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "SA2B Muted.png",
+            "thumbnail": "thumbnails/SA2B Muted.png",
+            "transparent": false,
+            "size": 730013,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "SA2B.png",
+            "thumbnail": "thumbnails/SA2B.png",
+            "transparent": false,
+            "size": 472730,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Sahara Camo.png",
+            "thumbnail": "thumbnails/Sahara Camo.png",
+            "transparent": false,
+            "size": 478077,
             "width": 512,
             "height": 1024
         },
@@ -10226,6 +10902,22 @@
             "size": 856850,
             "width": 512,
             "height": 1024
+        },
+        {
+            "file": "Sanrio.png",
+            "thumbnail": "thumbnails/Sanrio.png",
+            "transparent": false,
+            "size": 763900,
+            "width": 1035,
+            "height": 2304
+        },
+        {
+            "file": "Sanriosee.png",
+            "thumbnail": "thumbnails/Sanriosee.png",
+            "transparent": false,
+            "size": 505181,
+            "width": 1035,
+            "height": 2304
         },
         {
             "file": "Saturn 1 (Darkened 50%).jpg",
@@ -10604,6 +11296,14 @@
             "height": 1024
         },
         {
+            "file": "Shattering Lightning.png",
+            "thumbnail": "thumbnails/Shattering Lightning.png",
+            "transparent": false,
+            "size": 530511,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Shayedy.jpg",
             "thumbnail": "thumbnails/Shayedy.jpg",
             "transparent": false,
@@ -10680,6 +11380,22 @@
             "thumbnail": "thumbnails/Shy Guy.jpg",
             "transparent": false,
             "size": 72358,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Siberia Camo.png",
+            "thumbnail": "thumbnails/Siberia Camo.png",
+            "transparent": false,
+            "size": 542747,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Simple Darker WoR Highway.png",
+            "thumbnail": "thumbnails/Simple Darker WoR Highway.png",
+            "transparent": false,
+            "size": 251384,
             "width": 512,
             "height": 1024
         },
@@ -10988,6 +11704,22 @@
             "height": 1020
         },
         {
+            "file": "Snake HW 2 Alt.png",
+            "thumbnail": "thumbnails/Snake HW 2 Alt.png",
+            "transparent": false,
+            "size": 1059114,
+            "width": 1024,
+            "height": 2048
+        },
+        {
+            "file": "Snake HW Alt.png",
+            "thumbnail": "thumbnails/Snake HW Alt.png",
+            "transparent": false,
+            "size": 1100518,
+            "width": 1024,
+            "height": 2048
+        },
+        {
             "file": "Snythwave Dark.png",
             "thumbnail": "thumbnails/Snythwave Dark.png",
             "transparent": false,
@@ -11196,6 +11928,14 @@
             "height": 1024
         },
         {
+            "file": "Sparks FrostByte.png",
+            "thumbnail": "thumbnails/Sparks FrostByte.png",
+            "transparent": false,
+            "size": 502660,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Spider-Man 2.png",
             "thumbnail": "thumbnails/Spider-Man 2.png",
             "transparent": false,
@@ -11216,6 +11956,14 @@
             "thumbnail": "thumbnails/Spider-Man.png",
             "transparent": false,
             "size": 299289,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Spider.png",
+            "thumbnail": "thumbnails/Spider.png",
+            "transparent": false,
+            "size": 114304,
             "width": 512,
             "height": 1024
         },
@@ -11324,6 +12072,14 @@
             "height": 1280
         },
         {
+            "file": "Spongebob Doodles (IMG_4663).png",
+            "thumbnail": "thumbnails/Spongebob Doodles (IMG_4663).png",
+            "transparent": false,
+            "size": 413652,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Spongebob.png",
             "thumbnail": "thumbnails/Spongebob.png",
             "transparent": true,
@@ -11338,6 +12094,14 @@
             "size": 982517,
             "width": 1024,
             "height": 2048
+        },
+        {
+            "file": "Squid Game.png",
+            "thumbnail": "thumbnails/Squid Game.png",
+            "transparent": false,
+            "size": 713458,
+            "width": 512,
+            "height": 1024
         },
         {
             "file": "Squiggly Strings.jpg",
@@ -11404,6 +12168,14 @@
             "height": 1024
         },
         {
+            "file": "Star Wars Datapad Black Wallpaper Scaled.jpg",
+            "thumbnail": "thumbnails/Star Wars Datapad Black Wallpaper Scaled.jpg",
+            "transparent": false,
+            "size": 164804,
+            "width": 1183,
+            "height": 2560
+        },
+        {
             "file": "Star Wars.png",
             "thumbnail": "thumbnails/Star Wars.png",
             "transparent": false,
@@ -11432,6 +12204,30 @@
             "thumbnail": "thumbnails/Stars 3.png",
             "transparent": false,
             "size": 629317,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Stars And Stripes Darkened.jpg",
+            "thumbnail": "thumbnails/Stars And Stripes Darkened.jpg",
+            "transparent": false,
+            "size": 39579,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Stars And Stripes Full Saturation.jpg",
+            "thumbnail": "thumbnails/Stars And Stripes Full Saturation.jpg",
+            "transparent": false,
+            "size": 62378,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Stars And Stripes Monochrome.jpg",
+            "thumbnail": "thumbnails/Stars And Stripes Monochrome.jpg",
+            "transparent": false,
+            "size": 53023,
             "width": 512,
             "height": 1024
         },
@@ -11496,6 +12292,14 @@
             "thumbnail": "thumbnails/Steel Crosshatch.png",
             "transparent": false,
             "size": 1030952,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Steins Gate.png",
+            "thumbnail": "thumbnails/Steins Gate.png",
+            "transparent": false,
+            "size": 98895,
             "width": 512,
             "height": 1024
         },
@@ -11948,6 +12752,22 @@
             "height": 1342
         },
         {
+            "file": "Tiger Camo.png",
+            "thumbnail": "thumbnails/Tiger Camo.png",
+            "transparent": false,
+            "size": 698478,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Tigre.png",
+            "thumbnail": "thumbnails/Tigre.png",
+            "transparent": false,
+            "size": 1383038,
+            "width": 1024,
+            "height": 2048
+        },
+        {
             "file": "Time To Party Dark.png",
             "thumbnail": "thumbnails/Time To Party Dark.png",
             "transparent": false,
@@ -12050,6 +12870,22 @@
             "size": 663514,
             "width": 512,
             "height": 1024
+        },
+        {
+            "file": "Trivium Dragon Dark 2.png",
+            "thumbnail": "thumbnails/Trivium Dragon Dark 2.png",
+            "transparent": false,
+            "size": 1476673,
+            "width": 887,
+            "height": 1440
+        },
+        {
+            "file": "Trivium Dragon Dark.png",
+            "thumbnail": "thumbnails/Trivium Dragon Dark.png",
+            "transparent": false,
+            "size": 1493202,
+            "width": 890,
+            "height": 1436
         },
         {
             "file": "Trixie Cape Deluxe.png",
@@ -12200,6 +13036,30 @@
             "thumbnail": "thumbnails/Universo.png",
             "transparent": true,
             "size": 302375,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Untitled  122_20241027234020.png",
+            "thumbnail": "thumbnails/Untitled  122_20241027234020.png",
+            "transparent": false,
+            "size": 447857,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Up Highway.png",
+            "thumbnail": "thumbnails/Up Highway.png",
+            "transparent": false,
+            "size": 23776,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Urban Camo.png",
+            "thumbnail": "thumbnails/Urban Camo.png",
+            "transparent": false,
+            "size": 452639,
             "width": 512,
             "height": 1024
         },
@@ -12468,6 +13328,14 @@
             "height": 300
         },
         {
+            "file": "Warsaw Camo.png",
+            "thumbnail": "thumbnails/Warsaw Camo.png",
+            "transparent": false,
+            "size": 408120,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Weird Chicken.png",
             "thumbnail": "thumbnails/Weird Chicken.png",
             "transparent": false,
@@ -12524,12 +13392,36 @@
             "height": 1024
         },
         {
+            "file": "White Pony BB.jpg",
+            "thumbnail": "thumbnails/White Pony BB.jpg",
+            "transparent": false,
+            "size": 86002,
+            "width": 2332,
+            "height": 4016
+        },
+        {
+            "file": "White Pony OG.jpg",
+            "thumbnail": "thumbnails/White Pony OG.jpg",
+            "transparent": false,
+            "size": 68155,
+            "width": 2108,
+            "height": 3556
+        },
+        {
             "file": "Whose Line.png",
             "thumbnail": "thumbnails/Whose Line.png",
             "transparent": false,
             "size": 174568,
             "width": 256,
             "height": 512
+        },
+        {
+            "file": "Wii WoR.png",
+            "thumbnail": "thumbnails/Wii WoR.png",
+            "transparent": false,
+            "size": 825102,
+            "width": 512,
+            "height": 1024
         },
         {
             "file": "Windows.png",
@@ -12546,6 +13438,22 @@
             "size": 93812,
             "width": 384,
             "height": 768
+        },
+        {
+            "file": "Wipeout Highway.png",
+            "thumbnail": "thumbnails/Wipeout Highway.png",
+            "transparent": false,
+            "size": 94217,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "With The Beatles.png",
+            "thumbnail": "thumbnails/With The Beatles.png",
+            "transparent": false,
+            "size": 198186,
+            "width": 512,
+            "height": 1024
         },
         {
             "file": "Wolf.png",
@@ -12576,6 +13484,38 @@
             "thumbnail": "thumbnails/Wood.png",
             "transparent": false,
             "size": 373459,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Wooden Highway by Kanske.png",
+            "thumbnail": "thumbnails/Wooden Highway by Kanske.png",
+            "transparent": false,
+            "size": 682475,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Woodland Camo 2.png",
+            "thumbnail": "thumbnails/Woodland Camo 2.png",
+            "transparent": false,
+            "size": 391032,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Woodland Camo 3.png",
+            "thumbnail": "thumbnails/Woodland Camo 3.png",
+            "transparent": false,
+            "size": 586663,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Woodland Camo.png",
+            "thumbnail": "thumbnails/Woodland Camo.png",
+            "transparent": false,
+            "size": 64348,
             "width": 512,
             "height": 1024
         },
@@ -12844,6 +13784,14 @@
             "height": 1024
         },
         {
+            "file": "WWE.png",
+            "thumbnail": "thumbnails/WWE.png",
+            "transparent": false,
+            "size": 725890,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "X Abstract.jpg",
             "thumbnail": "thumbnails/X Abstract.jpg",
             "transparent": false,
@@ -12928,6 +13876,14 @@
             "thumbnail": "thumbnails/Yarr.png",
             "transparent": true,
             "size": 1046901,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Yellow Belt.png",
+            "thumbnail": "thumbnails/Yellow Belt.png",
+            "transparent": false,
+            "size": 32962,
             "width": 512,
             "height": 1024
         },
@@ -13036,6 +13992,14 @@
             "height": 1024
         },
         {
+            "file": "Yukon Camo.png",
+            "thumbnail": "thumbnails/Yukon Camo.png",
+            "transparent": false,
+            "size": 442621,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "YW.png",
             "thumbnail": "thumbnails/YW.png",
             "transparent": false,
@@ -13104,6 +14068,86 @@
             "thumbnail": "thumbnails/ZGS B07.png",
             "transparent": false,
             "size": 1108415,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Zuumi Drop Purple Orng 01.png",
+            "thumbnail": "thumbnails/Zuumi Drop Purple Orng 01.png",
+            "transparent": false,
+            "size": 183352,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Zuumi Drop Purple.png",
+            "thumbnail": "thumbnails/Zuumi Drop Purple.png",
+            "transparent": false,
+            "size": 200938,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Zuumi Drop Red 01.png",
+            "thumbnail": "thumbnails/Zuumi Drop Red 01.png",
+            "transparent": false,
+            "size": 185397,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Zuumi Drop Sienna.png",
+            "thumbnail": "thumbnails/Zuumi Drop Sienna.png",
+            "transparent": false,
+            "size": 186694,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Zuumi Drop Silver Red.png",
+            "thumbnail": "thumbnails/Zuumi Drop Silver Red.png",
+            "transparent": false,
+            "size": 181141,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Zuumi Galaxy 01.png",
+            "thumbnail": "thumbnails/Zuumi Galaxy 01.png",
+            "transparent": false,
+            "size": 526510,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Zuumi Galaxy 02.png",
+            "thumbnail": "thumbnails/Zuumi Galaxy 02.png",
+            "transparent": false,
+            "size": 537457,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Zuumi Galaxy 03.png",
+            "thumbnail": "thumbnails/Zuumi Galaxy 03.png",
+            "transparent": false,
+            "size": 460559,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Zuumi Galaxy RGB 01.png",
+            "thumbnail": "thumbnails/Zuumi Galaxy RGB 01.png",
+            "transparent": false,
+            "size": 396370,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Zuumi Grey Black.png",
+            "thumbnail": "thumbnails/Zuumi Grey Black.png",
+            "transparent": false,
+            "size": 406168,
             "width": 512,
             "height": 1024
         }
