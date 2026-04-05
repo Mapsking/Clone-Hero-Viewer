@@ -1,8 +1,8 @@
 {
-    "timestamp": "2026-01-14 14:58:31.840786",
+    "timestamp": "2026-04-04 19:26:17.624723",
     "scan_mode": "A",
     "counts": {
-        "highways": 1419,
+        "highways": 1455,
         "color_profiles": 532
     },
     "errors": {},
@@ -13,6 +13,7 @@
         "0.png",
         "100 Laugh.png",
         "100% Transparency (For Modcharts).png",
+        "2000 AD.png",
         "21 Sem Titulo 2-3.png",
         "21 Sem Titulo 2-4.png",
         "3-UP.png",
@@ -38,11 +39,15 @@
         "A7 Plain Sky Blue.png",
         "A8 Plain Blue.png",
         "A9 Plain Purple.png",
+        "Abbey Road.png",
         "Abstract Fretboard.png",
         "Abstract Lines 2 Dark.png",
         "Abstract Lines 2.jpg",
         "Abstract Purple.png",
         "Abstract.png",
+        "Ace Of Spades 1.png",
+        "Ado.png",
+        "Adobe Express - File.jpg",
         "Aesop Highway.png",
         "Aleatorio.png",
         "Alien Space Race.png",
@@ -55,11 +60,15 @@
         "Apple Logo.png",
         "Applejack Deluxe.png",
         "Aqua.png",
+        "Arctic Camo.png",
+        "Armand Roses.jpg",
+        "Arrows.png",
         "Astro (Azul).png",
         "Astro (Rojo).png",
         "Astro (Verde).png",
         "Astro.png",
         "Avengers.jpg",
+        "Avril Lavigne.png",
         "B&W Chickens.png",
         "B&W Diamonds (Hi-Res).png",
         "B&W Diamonds.png",
@@ -76,6 +85,7 @@
         "B9 Lame Gray Dark.png",
         "Back To The Future.jpg",
         "Baguette.png",
+        "Balcony v3.png",
         "Barbed Wire.png",
         "Bass Groove.png",
         "BBB4 Thin White Stripes.png",
@@ -86,14 +96,14 @@
         "Beatles Drums Light.png",
         "Beatles Drums.png",
         "Beatles Guitar Light.png",
-        "Beatles RB Bass.png",
-        "Beatles RB Drums.png",
         "Beatles RB Flowers.png",
-        "Beatles RB Guitar.png",
         "Beatles RB Swirls.png",
         "Beatles RB.png",
+        "Beatles Rock Band Greyscale.png",
+        "Beatles Rock Band.png",
         "Bee Lasers Blue.png",
         "Bee Lasers Purple.png",
+        "Berlin Camo.png",
         "BH Fretboard (Blue).png",
         "BH Fretboard (Rust).png",
         "Big Pumpkin.png",
@@ -103,6 +113,7 @@
         "Black Emblems.png",
         "Black Grey Bars.png",
         "Black Hole.png",
+        "Black Ice.jpg",
         "Black Panther 2.jpg",
         "Black Panther 3.png",
         "Black Panther Pink Profile.jpg",
@@ -112,12 +123,12 @@
         "Black Rose.png",
         "Black Shards.png",
         "Black Squares.png",
-        "Black With White Speckles Edit.png",
         "Black With White Speckles.png",
         "Black.png",
         "Blak 2.png",
         "Blak Rainbow.png",
         "Bliss But It's A CH Highway.png",
+        "Blood Ice.png",
         "Blossoms Dark.png",
         "Blossoms.png",
         "Blue & Orange Blurry.png",
@@ -126,6 +137,7 @@
         "Blue Abstract.png",
         "Blue Beatles Flowers Dark.png",
         "Blue Beatles Flowers.png",
+        "Blue Belt.png",
         "Blue Blobs.png",
         "Blue Caustic GH5.png",
         "Blue Caustic WoR.png",
@@ -152,10 +164,12 @@
         "Blue Scribbles Alt.png",
         "Blue Scribbles.png",
         "Blue Shiny.png",
+        "Blue Smoke FrostByte.png",
         "Blue Spider Caustic.png",
         "Blue Star.png",
         "Blue Thick Lines Dark.png",
-        "Blue Wisps.png",
+        "Blue Tiger Camo 2.png",
+        "Blue Tiger Camo.png",
         "Blue WoR.png",
         "Blue Woven.png",
         "Blue Yarn Dark.png",
@@ -163,6 +177,7 @@
         "Blue.png",
         "Bluey Dark.png",
         "Bluey.png",
+        "Blur Stroke Stripes.png",
         "Blurry Gray Lines Dark.png",
         "Blurry Lines.png",
         "Blurry Purple Triangles.png",
@@ -174,6 +189,7 @@
         "Brillant Dice.jpg",
         "Brushie Dark.png",
         "Brushie.png",
+        "Bubbles (Neck).png",
         "Bullet.png",
         "Butterflies.jpg",
         "C4 Lame Aqua.png",
@@ -211,6 +227,7 @@
         "CH Discord.png",
         "CH Mandelbrot.png",
         "CH Space Scene.png",
+        "Chains.png",
         "Charlotte (Nao Tomori 2).png",
         "Checkerboard Lanes Dark.jpg",
         "Checkerboard Lanes Inverted Dark.jpg",
@@ -233,6 +250,7 @@
         "Cobblestone Street.png",
         "Coconuts.png",
         "COD PAP.png",
+        "Coheed & Cambria (Untitled Project).jpg",
         "Coiled.png",
         "Cold Chambers.png",
         "Colgate.png",
@@ -241,6 +259,10 @@
         "Colored Bars.png",
         "Colored Checkerboard.png",
         "Colored Lanes.png",
+        "Colorful Marble 2.png",
+        "Colorful Marble 3.png",
+        "Colorful Marble 4.png",
+        "Colorful Marble.png",
         "Colour 2.png",
         "Confetti.png",
         "Cool Green Rock Texture.png",
@@ -267,6 +289,9 @@
         "Custard Cream.png",
         "Cutiemark Crusaders Deluxe.png",
         "Cyan Woven.png",
+        "Dance Pattern A.png",
+        "Dance Pattern B.png",
+        "Danger.png",
         "Daph.png",
         "Dark Blue Emblems.png",
         "Dark Brushed Metal (Dark).png",
@@ -278,7 +303,6 @@
         "Dark Hatch.png",
         "Dark Lanes.png",
         "Dark Light Blue.png",
-        "Dark Lines.png",
         "Dark Purple.png",
         "Dark Radiated.png",
         "Dark Rainbow.png",
@@ -288,15 +312,24 @@
         "Dark Teal.jpg",
         "Dark Wood 2.png",
         "Dark Wood.png",
+        "DE SN Ped Test 1 Airoads LAS Dark.png",
+        "DE SN Ped Test 1 Airoads LAS.png",
         "Default Neck Dark.png",
         "Default Neck.png",
+        "Deftones Diamond Eyes HW.jpg",
         "Derpy Hooves Deluxe Fancy.png",
         "Derpy Hooves Deluxe.png",
+        "Desert Camo 2.png",
+        "Desert Camo.png",
         "Dia De Los Muertos Dark.png",
         "Dia De Los Muertos.png",
         "Diamond Lightning Bolts Dark.png",
         "Diamond Lightning Bolts.png",
         "Diamond.png",
+        "Digital Camo 2.png",
+        "Digital Camo.png",
+        "Dimebag Darrell.png",
+        "Dino Step.png",
         "Dirt.png",
         "DirtyHertz.png",
         "Discord Chaotic Deluxe.png",
@@ -312,6 +345,9 @@
         "Donkey Way 75%.png",
         "Donkey Way.png",
         "Donut.png",
+        "Doom Faces Dark.png",
+        "Doom Faces Darker.png",
+        "Doom Faces.png",
         "Doom II.png",
         "Double Angled Lines.png",
         "Double Lane Highway.png",
@@ -322,11 +358,13 @@
         "Dragon 3.png",
         "Dragon Etch.png",
         "Dragon Eye.jpg",
+        "Dragon Flower.jpg",
         "Dragon.jpg",
         "Droplets.png",
         "Drum Lines.png",
         "Dude On Crutches.png",
         "Dull Glassy Lanes.png",
+        "Dusty Camo.png",
         "Easter 2021.png",
         "Eclipse.jpg",
         "Eddie VH (B&W).png",
@@ -451,7 +489,6 @@
         "GH3 Tom Morello.png",
         "GH3 Xavier.png",
         "GH5 High Res.png",
-        "GH5 Variation.png",
         "GH5.png",
         "GH6.png",
         "GHA Brad Whitford.png",
@@ -937,7 +974,6 @@
         "Purple Checkers.png",
         "Purple Curtain.png",
         "Purple Dark Galaxy.png",
-        "Purple Dark Wood.png",
         "Purple Dots.png",
         "Purple Emblems.png",
         "Purple Foil.jpg",
@@ -1456,6 +1492,14 @@
             "height": 2
         },
         {
+            "file": "2000 AD.png",
+            "thumbnail": "thumbnails/2000 AD.png",
+            "transparent": false,
+            "size": 305347,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "21 Sem Titulo 2-3.png",
             "thumbnail": "thumbnails/21 Sem Titulo 2-3.png",
             "transparent": false,
@@ -1656,6 +1700,14 @@
             "height": 1024
         },
         {
+            "file": "Abbey Road.png",
+            "thumbnail": "thumbnails/Abbey Road.png",
+            "transparent": false,
+            "size": 472051,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Abstract Fretboard.png",
             "thumbnail": "thumbnails/Abstract Fretboard.png",
             "transparent": false,
@@ -1692,6 +1744,30 @@
             "thumbnail": "thumbnails/Abstract.png",
             "transparent": false,
             "size": 238378,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Ace Of Spades 1.png",
+            "thumbnail": "thumbnails/Ace Of Spades 1.png",
+            "transparent": false,
+            "size": 109808,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Ado.png",
+            "thumbnail": "thumbnails/Ado.png",
+            "transparent": true,
+            "size": 28209,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Adobe Express - File.jpg",
+            "thumbnail": "thumbnails/Adobe Express - File.jpg",
+            "transparent": false,
+            "size": 245307,
             "width": 512,
             "height": 1024
         },
@@ -1792,6 +1868,30 @@
             "height": 1024
         },
         {
+            "file": "Arctic Camo.png",
+            "thumbnail": "thumbnails/Arctic Camo.png",
+            "transparent": false,
+            "size": 324485,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Armand Roses.jpg",
+            "thumbnail": "thumbnails/Armand Roses.jpg",
+            "transparent": false,
+            "size": 819254,
+            "width": 720,
+            "height": 1440
+        },
+        {
+            "file": "Arrows.png",
+            "thumbnail": "thumbnails/Arrows.png",
+            "transparent": false,
+            "size": 31200,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Astro (Azul).png",
             "thumbnail": "thumbnails/Astro (Azul).png",
             "transparent": false,
@@ -1830,6 +1930,14 @@
             "size": 798928,
             "width": 613,
             "height": 1226
+        },
+        {
+            "file": "Avril Lavigne.png",
+            "thumbnail": "thumbnails/Avril Lavigne.png",
+            "transparent": false,
+            "size": 152187,
+            "width": 512,
+            "height": 1024
         },
         {
             "file": "B&W Chickens.png",
@@ -1960,6 +2068,14 @@
             "height": 1024
         },
         {
+            "file": "Balcony v3.png",
+            "thumbnail": "thumbnails/Balcony v3.png",
+            "transparent": true,
+            "size": 23525,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Barbed Wire.png",
             "thumbnail": "thumbnails/Barbed Wire.png",
             "transparent": false,
@@ -2040,34 +2156,10 @@
             "height": 512
         },
         {
-            "file": "Beatles RB Bass.png",
-            "thumbnail": "thumbnails/Beatles RB Bass.png",
-            "transparent": false,
-            "size": 48633,
-            "width": 256,
-            "height": 512
-        },
-        {
-            "file": "Beatles RB Drums.png",
-            "thumbnail": "thumbnails/Beatles RB Drums.png",
-            "transparent": false,
-            "size": 61045,
-            "width": 256,
-            "height": 512
-        },
-        {
             "file": "Beatles RB Flowers.png",
             "thumbnail": "thumbnails/Beatles RB Flowers.png",
             "transparent": false,
             "size": 86126,
-            "width": 256,
-            "height": 512
-        },
-        {
-            "file": "Beatles RB Guitar.png",
-            "thumbnail": "thumbnails/Beatles RB Guitar.png",
-            "transparent": false,
-            "size": 57980,
             "width": 256,
             "height": 512
         },
@@ -2088,6 +2180,22 @@
             "height": 1345
         },
         {
+            "file": "Beatles Rock Band Greyscale.png",
+            "thumbnail": "thumbnails/Beatles Rock Band Greyscale.png",
+            "transparent": true,
+            "size": 1041759,
+            "width": 2048,
+            "height": 4096
+        },
+        {
+            "file": "Beatles Rock Band.png",
+            "thumbnail": "thumbnails/Beatles Rock Band.png",
+            "transparent": true,
+            "size": 2934214,
+            "width": 2048,
+            "height": 4096
+        },
+        {
             "file": "Bee Lasers Blue.png",
             "thumbnail": "thumbnails/Bee Lasers Blue.png",
             "transparent": true,
@@ -2100,6 +2208,14 @@
             "thumbnail": "thumbnails/Bee Lasers Purple.png",
             "transparent": true,
             "size": 718552,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Berlin Camo.png",
+            "thumbnail": "thumbnails/Berlin Camo.png",
+            "transparent": false,
+            "size": 482464,
             "width": 512,
             "height": 1024
         },
@@ -2176,6 +2292,14 @@
             "height": 1024
         },
         {
+            "file": "Black Ice.jpg",
+            "thumbnail": "thumbnails/Black Ice.jpg",
+            "transparent": false,
+            "size": 439275,
+            "width": 958,
+            "height": 1916
+        },
+        {
             "file": "Black Panther 2.jpg",
             "thumbnail": "thumbnails/Black Panther 2.jpg",
             "transparent": false,
@@ -2248,14 +2372,6 @@
             "height": 630
         },
         {
-            "file": "Black With White Speckles Edit.png",
-            "thumbnail": "thumbnails/Black With White Speckles Edit.png",
-            "transparent": false,
-            "size": 42342,
-            "width": 512,
-            "height": 1024
-        },
-        {
             "file": "Black With White Speckles.png",
             "thumbnail": "thumbnails/Black With White Speckles.png",
             "transparent": false,
@@ -2294,6 +2410,14 @@
             "size": 378290,
             "width": 344,
             "height": 688
+        },
+        {
+            "file": "Blood Ice.png",
+            "thumbnail": "thumbnails/Blood Ice.png",
+            "transparent": false,
+            "size": 883107,
+            "width": 509,
+            "height": 1018
         },
         {
             "file": "Blossoms Dark.png",
@@ -2358,6 +2482,14 @@
             "size": 2001979,
             "width": 1166,
             "height": 2332
+        },
+        {
+            "file": "Blue Belt.png",
+            "thumbnail": "thumbnails/Blue Belt.png",
+            "transparent": false,
+            "size": 29441,
+            "width": 512,
+            "height": 1024
         },
         {
             "file": "Blue Blobs.png",
@@ -2568,6 +2700,14 @@
             "height": 1024
         },
         {
+            "file": "Blue Smoke FrostByte.png",
+            "thumbnail": "thumbnails/Blue Smoke FrostByte.png",
+            "transparent": false,
+            "size": 548538,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Blue Spider Caustic.png",
             "thumbnail": "thumbnails/Blue Spider Caustic.png",
             "transparent": false,
@@ -2592,12 +2732,20 @@
             "height": 1024
         },
         {
-            "file": "Blue Wisps.png",
-            "thumbnail": "thumbnails/Blue Wisps.png",
+            "file": "Blue Tiger Camo 2.png",
+            "thumbnail": "thumbnails/Blue Tiger Camo 2.png",
             "transparent": false,
-            "size": 129329,
-            "width": 234,
-            "height": 468
+            "size": 504231,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Blue Tiger Camo.png",
+            "thumbnail": "thumbnails/Blue Tiger Camo.png",
+            "transparent": false,
+            "size": 71257,
+            "width": 512,
+            "height": 1024
         },
         {
             "file": "Blue WoR.png",
@@ -2652,6 +2800,14 @@
             "thumbnail": "thumbnails/Bluey.png",
             "transparent": false,
             "size": 173385,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Blur Stroke Stripes.png",
+            "thumbnail": "thumbnails/Blur Stroke Stripes.png",
+            "transparent": false,
+            "size": 47951,
             "width": 512,
             "height": 1024
         },
@@ -2742,6 +2898,14 @@
             "size": 73435,
             "width": 338,
             "height": 676
+        },
+        {
+            "file": "Bubbles (Neck).png",
+            "thumbnail": "thumbnails/Bubbles (Neck).png",
+            "transparent": false,
+            "size": 639268,
+            "width": 512,
+            "height": 1024
         },
         {
             "file": "Bullet.png",
@@ -3040,6 +3204,14 @@
             "height": 1343
         },
         {
+            "file": "Chains.png",
+            "thumbnail": "thumbnails/Chains.png",
+            "transparent": false,
+            "size": 355735,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Charlotte (Nao Tomori 2).png",
             "thumbnail": "thumbnails/Charlotte (Nao Tomori 2).png",
             "transparent": false,
@@ -3216,6 +3388,14 @@
             "height": 1024
         },
         {
+            "file": "Coheed & Cambria (Untitled Project).jpg",
+            "thumbnail": "thumbnails/Coheed & Cambria (Untitled Project).jpg",
+            "transparent": false,
+            "size": 466109,
+            "width": 681,
+            "height": 1362
+        },
+        {
             "file": "Coiled.png",
             "thumbnail": "thumbnails/Coiled.png",
             "transparent": false,
@@ -3276,6 +3456,38 @@
             "thumbnail": "thumbnails/Colored Lanes.png",
             "transparent": false,
             "size": 8567,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Colorful Marble 2.png",
+            "thumbnail": "thumbnails/Colorful Marble 2.png",
+            "transparent": false,
+            "size": 767080,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Colorful Marble 3.png",
+            "thumbnail": "thumbnails/Colorful Marble 3.png",
+            "transparent": false,
+            "size": 732881,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Colorful Marble 4.png",
+            "thumbnail": "thumbnails/Colorful Marble 4.png",
+            "transparent": false,
+            "size": 740387,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Colorful Marble.png",
+            "thumbnail": "thumbnails/Colorful Marble.png",
+            "transparent": false,
+            "size": 741554,
             "width": 512,
             "height": 1024
         },
@@ -3488,6 +3700,30 @@
             "height": 1024
         },
         {
+            "file": "Dance Pattern A.png",
+            "thumbnail": "thumbnails/Dance Pattern A.png",
+            "transparent": false,
+            "size": 557138,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Dance Pattern B.png",
+            "thumbnail": "thumbnails/Dance Pattern B.png",
+            "transparent": false,
+            "size": 472525,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Danger.png",
+            "thumbnail": "thumbnails/Danger.png",
+            "transparent": false,
+            "size": 173448,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Daph.png",
             "thumbnail": "thumbnails/Daph.png",
             "transparent": false,
@@ -3576,14 +3812,6 @@
             "height": 1024
         },
         {
-            "file": "Dark Lines.png",
-            "thumbnail": "thumbnails/Dark Lines.png",
-            "transparent": false,
-            "size": 232588,
-            "width": 512,
-            "height": 1024
-        },
-        {
             "file": "Dark Purple.png",
             "thumbnail": "thumbnails/Dark Purple.png",
             "transparent": true,
@@ -3656,6 +3884,22 @@
             "height": 1024
         },
         {
+            "file": "DE SN Ped Test 1 Airoads LAS Dark.png",
+            "thumbnail": "thumbnails/DE SN Ped Test 1 Airoads LAS Dark.png",
+            "transparent": false,
+            "size": 573555,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "DE SN Ped Test 1 Airoads LAS.png",
+            "thumbnail": "thumbnails/DE SN Ped Test 1 Airoads LAS.png",
+            "transparent": false,
+            "size": 668515,
+            "width": 512,
+            "height": 1024
+        },
+        {
             "file": "Default Neck Dark.png",
             "thumbnail": "thumbnails/Default Neck Dark.png",
             "transparent": false,
@@ -3672,6 +3916,14 @@
             "height": 1024
         },
         {
+            "file": "Deftones Diamond Eyes HW.jpg",
+            "thumbnail": "thumbnails/Deftones Diamond Eyes HW.jpg",
+            "transparent": false,
+            "size": 138603,
+            "width": 1024,
+            "height": 2048
+        },
+        {
             "file": "Derpy Hooves Deluxe Fancy.png",
             "thumbnail": "thumbnails/Derpy Hooves Deluxe Fancy.png",
             "transparent": false,
@@ -3684,6 +3936,22 @@
             "thumbnail": "thumbnails/Derpy Hooves Deluxe.png",
             "transparent": false,
             "size": 685796,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Desert Camo 2.png",
+            "thumbnail": "thumbnails/Desert Camo 2.png",
+            "transparent": false,
+            "size": 561300,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Desert Camo.png",
+            "thumbnail": "thumbnails/Desert Camo.png",
+            "transparent": false,
+            "size": 160405,
             "width": 512,
             "height": 1024
         },
@@ -3726,6 +3994,38 @@
             "size": 148766,
             "width": 745,
             "height": 1490
+        },
+        {
+            "file": "Digital Camo 2.png",
+            "thumbnail": "thumbnails/Digital Camo 2.png",
+            "transparent": false,
+            "size": 200774,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Digital Camo.png",
+            "thumbnail": "thumbnails/Digital Camo.png",
+            "transparent": false,
+            "size": 39509,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Dimebag Darrell.png",
+            "thumbnail": "thumbnails/Dimebag Darrell.png",
+            "transparent": false,
+            "size": 740869,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Dino Step.png",
+            "thumbnail": "thumbnails/Dino Step.png",
+            "transparent": false,
+            "size": 270568,
+            "width": 290,
+            "height": 580
         },
         {
             "file": "Dirt.png",
@@ -3848,6 +4148,30 @@
             "height": 1024
         },
         {
+            "file": "Doom Faces Dark.png",
+            "thumbnail": "thumbnails/Doom Faces Dark.png",
+            "transparent": false,
+            "size": 143767,
+            "width": 682,
+            "height": 1364
+        },
+        {
+            "file": "Doom Faces Darker.png",
+            "thumbnail": "thumbnails/Doom Faces Darker.png",
+            "transparent": false,
+            "size": 174012,
+            "width": 682,
+            "height": 1365
+        },
+        {
+            "file": "Doom Faces.png",
+            "thumbnail": "thumbnails/Doom Faces.png",
+            "transparent": false,
+            "size": 183844,
+            "width": 682,
+            "height": 1364
+        },
+        {
             "file": "Doom II.png",
             "thumbnail": "thumbnails/Doom II.png",
             "transparent": false,
@@ -3928,6 +4252,14 @@
             "height": 708
         },
         {
+            "file": "Dragon Flower.jpg",
+            "thumbnail": "thumbnails/Dragon Flower.jpg",
+            "transparent": false,
+            "size": 602617,
+            "width": 720,
+            "height": 1440
+        },
+        {
             "file": "Dragon.jpg",
             "thumbnail": "thumbnails/Dragon.jpg",
             "transparent": false,
@@ -3964,6 +4296,14 @@
             "thumbnail": "thumbnails/Dull Glassy Lanes.png",
             "transparent": true,
             "size": 944218,
+            "width": 512,
+            "height": 1024
+        },
+        {
+            "file": "Dusty Camo.png",
+            "thumbnail": "thumbnails/Dusty Camo.png",
+            "transparent": false,
+            "size": 666408,
             "width": 512,
             "height": 1024
         },
@@ -4958,14 +5298,6 @@
             "size": 3657722,
             "width": 1024,
             "height": 2048
-        },
-        {
-            "file": "GH5 Variation.png",
-            "thumbnail": "thumbnails/GH5 Variation.png",
-            "transparent": false,
-            "size": 984130,
-            "width": 512,
-            "height": 1024
         },
         {
             "file": "GH5.png",
@@ -8844,14 +9176,6 @@
             "thumbnail": "thumbnails/Purple Dark Galaxy.png",
             "transparent": true,
             "size": 152450,
-            "width": 512,
-            "height": 1024
-        },
-        {
-            "file": "Purple Dark Wood.png",
-            "thumbnail": "thumbnails/Purple Dark Wood.png",
-            "transparent": false,
-            "size": 808710,
             "width": 512,
             "height": 1024
         },
